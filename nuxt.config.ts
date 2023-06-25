@@ -11,5 +11,9 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
   ],
 
-  buildDir: './.nuxt'
+  app: {
+    buildAssetsDir: './public'
+  },
+
+  buildDir: './.nuxt',
 })
