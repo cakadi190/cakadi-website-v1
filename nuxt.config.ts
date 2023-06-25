@@ -12,6 +12,6 @@ export default defineNuxtConfig({
   ],
 
   app: {
-    buildAssetsDir: './_nuxt/'
+    baseURL: 'https://www.cakadi.eu.org/'
   },
 })
