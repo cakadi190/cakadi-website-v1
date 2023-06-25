@@ -11,7 +11,24 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
   ],
 
+  build: {
+    analyze: {
+      analyzerMode: 'static'
+    },
+  },
+
+  vite: {
+    publicDir: './',
+  },
+
   app: {
-    baseURL: 'https://www.cakadi.eu.org/'
+    baseURL: '/', // When pushing to Vercel.com only!
+    
+    head: {
+      "meta": [
+        { "name": "viewport", "content": "width=device-width, initial-scale=1, user-scalable=0" },
+        { "charset": "utf-8" },
+      ],
+    }
   },
 })
