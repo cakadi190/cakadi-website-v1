@@ -61,5 +61,9 @@ home
             span.mt-1.w-16.rounded-full.bg-slate-400(class='h-0.5 lg:h-1 lg:w-24 dark:bg-slate-500')
             span(class="text-slate-700 dark:text-slate-300") Slamet!
             span.mt-1.w-16.rounded-full.bg-slate-400(class='h-0.5 lg:h-1 lg:w-24 dark:bg-slate-500')
-          div.text-gray-500.text-base(class="dark:text-gray-400") &sim; Batara Ismaya Batara Iswara Jurudyah Punta Prasanta Semar
+          div &amp; 
+            strong.text-slate-700(class="dark:text-slate-300") Eling 
+            |  Lan 
+            strong.text-slate-700(class="dark:text-slate-300") Waspodo
+          div.text-gray-500.text-base(class="dark:text-gray-400") Batara Ismaya Batara Iswara Jurudyah Punta Prasanta Semar
 </template>
