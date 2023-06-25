@@ -16,6 +16,7 @@ logs
 .DS_Store
 .fleet
 .idea
+package-lock.*
 
 # Local env files
 .env
