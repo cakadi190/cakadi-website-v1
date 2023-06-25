@@ -22,8 +22,6 @@ export default defineNuxtConfig({
   },
 
   app: {
-    baseURL: '/', // When pushing to Vercel.com only!
-    
     head: {
       "meta": [
         { "name": "viewport", "content": "width=device-width, initial-scale=1, user-scalable=0" },
