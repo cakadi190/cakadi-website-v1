@@ -12,6 +12,6 @@ export default defineNuxtConfig({
   ],
 
   app: {
-    buildAssetsDir: './'
+    buildAssetsDir: './_nuxt/'
   },
 })
