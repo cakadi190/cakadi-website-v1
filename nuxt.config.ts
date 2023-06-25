@@ -11,11 +11,11 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
   ],
 
-  build: {
-    analyze: {
-      analyzerMode: 'static'
-    },
-  },
+  // build: {
+  //   analyze: {
+  //     analyzerMode: 'static'
+  //   },
+  // },
 
   vite: {
     publicDir: './',
