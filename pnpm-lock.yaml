@@ -11,6 +11,9 @@ dependencies:
   '@fortawesome/fontawesome-free':
     specifier: ^6.4.0
     version: 6.4.0
+  '@fortawesome/fontawesome-svg-core':
+    specifier: ^6.4.0
+    version: 6.4.0
   boxicons:
     specifier: ^2.1.4
     version: 2.1.4
@@ -865,10 +868,24 @@ packages:
     resolution: {integrity: sha512-AEAHI/nDJaGQLQ3Q98VgLp4mEzibw+S+Ya72mhQpwG1m5pZvI7tiZupZBh6G5lRes5PB6C9+byOwpN0eHhlhmw==}
     dev: true
 
+  /@fortawesome/fontawesome-common-types@6.4.0:
+    resolution: {integrity: sha512-HNii132xfomg5QVZw0HwXXpN22s7VBHQBv9CeOu9tfJnhsWQNd2lmTNi8CSrnw5B+5YOmzu1UoPAyxaXsJ6RgQ==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dev: false
+
   /@fortawesome/fontawesome-free@6.4.0:
     resolution: {integrity: sha512-0NyytTlPJwB/BF5LtRV8rrABDbe3TdTXqNB3PdZ+UUUZAEIrdOJdmABqKjt4AXwIoJNaRVVZEXxpNrqvE1GAYQ==}
     engines: {node: '>=6'}
     requiresBuild: true
+    dev: false
+
+  /@fortawesome/fontawesome-svg-core@6.4.0:
+    resolution: {integrity: sha512-Bertv8xOiVELz5raB2FlXDPKt+m94MQ3JgDfsVbrqNpLU9+UE2E18GKjLKw+d3XbeYPqg1pzyQKGsrzbw+pPaw==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dependencies:
+      '@fortawesome/fontawesome-common-types': 6.4.0
     dev: false
 
   /@hapi/hoek@9.3.0:

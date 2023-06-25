@@ -3,23 +3,11 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   
   css: [
-    '@fortawesome/fontawesome-free/css/all.min.css'
+    '@fortawesome/fontawesome-free/css/all.min.css',
+    '@fortawesome/fontawesome-svg-core/styles.css'
   ],
 
   modules: [
     '@nuxtjs/tailwindcss',
   ],
-
-  build: {
-    extend(config, {  loaders }) {
-      loaders.module.rules.push({
-        test: /\.postcss$/,
-        use: [
-          {
-            loader: 'postcss-loader'
-          }
-        ]
-      })
-    }
-  },
 })
