@@ -4,24 +4,24 @@ const year = new Date().getFullYear();
 
 <template lang="pug">
 //- Footer
-footer.footer-main.text-gray-300.bg-gray-900.border-t.border-transparent(class="dark:bg-gray-900/[.25] dark:border-gray-800")
+footer.footer-main.text-gray-300.bg-gray-900.border-t.border-transparent(class="dark:bg-gray-900/[.25] py-6 dark:border-gray-800")
   //- Footer Top
-  div.container.mx-auto.px-4.py-10.flex-col.gap-6(class="md:flex-row dark:text-gray-400 lg:max-w-7xl flex justify-between py-6")
+  div.container.mx-auto.px-4.py-6.flex-col.gap-6(class="md:flex-row dark:text-gray-400 lg:max-w-7xl flex justify-between")
     //- .col-md-6
     .w-full(class="md:w-1/2 md:mb-0")
       h3.font-bold.mb-2 Tentang Saya 
       p Saya adalah seorang fullstack developer yang suka sekali dengan desain dan juga tertarik di dunia teknologi. Saya adalah orang kelahiran Klaten, Jawa Tengah dan berdomisili di Ngawi, Jawa Timur.
 
       .flex.gap-3.mt-4
-        a(class="hover:text-white duration-200 transition-all", href="")
+        a(class="hover:text-white duration-200 transition-all", href="https://www.facebook.com/cakadi190")
           i.fab.fa-facebook.fa-fw.text-xl
-        a(class="hover:text-white duration-200 transition-all", href="")
+        a(class="hover:text-white duration-200 transition-all", href="https://www.twitter.com/cakadi190")
           i.fab.fa-twitter.fa-fw.text-xl
-        a(class="hover:text-white duration-200 transition-all", href="")
+        a(class="hover:text-white duration-200 transition-all", href="https://www.figma.com/@cakadi190")
           i.fab.fa-figma.fa-fw.text-xl
-        a(class="hover:text-white duration-200 transition-all", href="")
+        a(class="hover:text-white duration-200 transition-all", href="https://www.instagram.com/cakadi190")
           i.fab.fa-instagram.fa-fw.text-xl
-        a(class="hover:text-white duration-200 transition-all", href="")
+        a(class="hover:text-white duration-200 transition-all", href="https://www.linkedin.com/in/cakadi190")
           i.fab.fa-linkedin.fa-fw.text-xl
 
     //- .col-md-6.row
@@ -67,7 +67,7 @@ footer.footer-main.text-gray-300.bg-gray-900.border-t.border-transparent(class="
             a.text-white.transition-all.duration-200(class="hover:text-gray-300", href="https://trakteer.id/cakadi190") Donasi
 
   //- Footer Bottom
-  .container.mx-auto.px-4.text-center.pt-4.border-t.border-gray-800.flex-col(class="md:text-left md:flex-row dark:text-gray-400 lg:max-w-7xl flex justify-between py-6")
+  .container.mx-auto.px-4.text-center.pt-8.border-t.border-gray-800.flex-col(class="md:text-left md:flex-row dark:text-gray-400 lg:max-w-7xl flex justify-between py-6")
     p Hak cipta &copy; {{ year ?? 2023 }} 
       a.text-white.duration-200.transition-all(class="hover:text-green-400", href="https://www.cakadi.my.id") Cak Adi
       | . Hak cipta dilindungi perundang-undangan.

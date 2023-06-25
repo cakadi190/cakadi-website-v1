@@ -8,4 +8,6 @@ useHead({
 
 <template lang="pug">
 layout#pendidikan
+  template(#page-title) Riwayat Pendidikan Saya
+  template(#page-desc) Biar gak bingung saya ini alumni mana aja dan atau lagi sekolah dimana?
 </template>

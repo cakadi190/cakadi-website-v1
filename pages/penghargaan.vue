@@ -8,4 +8,6 @@ useHead({
 
 <template lang="pug">
 layout#portofolio
+  template(#page-title) Penghargaan &amp; Sertifikasi
+  template(#page-desc) Bukan pamer ya, tapi mau nunjukin keahlian saya.
 </template>

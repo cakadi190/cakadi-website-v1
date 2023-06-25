@@ -9,5 +9,5 @@ useHead({
 <template lang="pug">
 layout#portofolio
   template(#page-title) Portofolio Saya
-  template(#page-desc) Beberapa pekerjaan yang telah aku kerjakan.
+  template(#page-desc) Aku cantumkan beberapa karya yang udah aku buat.
 </template>

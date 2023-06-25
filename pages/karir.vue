@@ -8,4 +8,6 @@ useHead({
 
 <template lang="pug">
 layout#career
+  template(#page-title) Riwayat Pekerjaan Saya
+  template(#page-desc) Biar gak dikira pengangguran aja hehehe.
 </template>

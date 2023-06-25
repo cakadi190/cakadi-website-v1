@@ -2,7 +2,14 @@
 import home from '~/layouts/home.vue'
 
 useHead({
-  title: 'Beranda'
+  title: 'Beranda',
+  meta: [
+    { key: 'description', name: 'description', content: 'Web Resmi Amir Zuhdi Wibowo yang mana adalah seorang Fullstack Web Developer yang suka desain dan atau semua hal yang berbau teknologi.' },
+    { key: 'og:canonical', name: 'canonical', content: 'https://www.cakadi.eu.org' },
+    
+    { key: 'og:url', name: 'og:url', content: 'https://www.cakadi.eu.org' },
+    { key: 'og:description', name: 'og:description', content: 'Web Resmi Amir Zuhdi Wibowo yang mana adalah seorang Fullstack Web Developer yang suka desain dan atau semua hal yang berbau teknologi.' },
+  ]
 })
 </script>
 
@@ -28,7 +35,7 @@ home
           span.font-bold.text-gray-700(class="dark:text-gray-300") teknologi.
         
         .pt-6.flex.gap-2.justify-center(class="md:justify-start")
-          router-link.px-4.text-lg.py-2.outline-0.outline-none.duration-200.transition-all.rounded-md.text-white.bg-green-500.flex.gap-2.items-center(class="hover:bg-green-600 focus:ring-2 focus:ring-green-500/[.75] focus:ring-offset-2 dark:focus:ring-offset-gray-950", :to="{ name: 'index' }")
+          router-link.px-4.text-lg.py-2.outline-0.outline-none.duration-200.transition-all.rounded-md.text-white.bg-green-500.flex.gap-2.items-center(class="hover:bg-green-600 focus:ring-2 focus:ring-green-500/[.75] focus:ring-offset-2 dark:focus:ring-offset-gray-950", :to="{ name: 'kontak-saya' }")
             i.fas.fa-phone.text-sm
             span Hubungi Saya
           router-link.px-4.text-lg.py-2.outline-0.outline-none.duration-200.transition-all.rounded-md.text-gray-500.items-center.flex.gap-2(class="hover:bg-green-600 focus:ring-2 dark:text-white hover:text-white focus:ring-green-500/[.75] focus:ring-offset-2 dark:focus:ring-offset-gray-950", :to="{ name: 'index' }") 
