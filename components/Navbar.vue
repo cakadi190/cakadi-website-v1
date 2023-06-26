@@ -125,8 +125,8 @@ div
               i.fab.fa-youtube
               span Youtube
 
-  div.w-full.h-full.fixed.z-40.duration-200.transition-all(ref="refShadow", class="bg-gray-950/[.75] ml-[-100%]", @click="sidebarToggler")
-  aside.fixed.top-0.left-0.h-screen.bg-white.border-r.border-transparent.z-50.flex.duration-200.transition-all.flex-col.rounded-r-xl(class="w-[20rem] dark:border-gray-700 dark:bg-gray-900 ml-[-100%]", ref="refSidebar")
+  div.w-full.h-full.fixed.z-40.duration-200.transition-all(ref="refShadow", class="bg-slate-950/[.75] ml-[-100%]", @click="sidebarToggler")
+  aside.fixed.top-0.left-0.h-screen.bg-white.border-r.border-transparent.z-50.flex.duration-200.transition-all.flex-col.rounded-r-xl(class="w-[20rem] dark:border-slate-700 dark:bg-slate-900 ml-[-100%]", ref="refSidebar")
     .px-6.pt-5.pb-7.flex.justify-between
       router-link.max-w-max.text-xl.flex.items-center.outline-none.outline-0(:to="{ name: 'index' }", class="outline-0 outline-none transition-all duration-200 min-hover:text-green-500")
         img(class="dark:hidden", src="/images/brands/logo-color-long.svg", style="height: 24px")

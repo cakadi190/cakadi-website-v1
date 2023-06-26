@@ -19,7 +19,7 @@ useHead({
 })
 
 const callsign: TypedOptions = {
-  strings: ["Cak Adi", "Mas Adi", "Mas Amir", "Kak Adi", "Amir", "Adi", "Dek Amir", "Dek Adi"],
+  strings: ["Cak Adi", "Mas Adi", "Mas Amir", "Kak Amir", "Kak Adi", "Amir", "Adi", "Dek Amir", "Dek Adi"],
   loop: true,
   typeSpeed: 50,
 };
@@ -51,7 +51,7 @@ home
         typed(:options='role', v-motion, :initial="{ opacity: 0, x: -100 }", :enter="{ opacity: 1, x: 0 }", :delay="50")
           p.text-lg.text-gray-500(class="lg:text-2xl dark:text-gray-400") Seorang 
             span.font-bold.text-gray-700.typing(class="dark:text-gray-300")
-            |  berbasis di Kabupaten Ngawi yang suka sekali dengan 
+            |  berbasis di Kota Kabupaten Ngawi yang suka sekali dengan 
             span.font-bold.text-gray-700(class="dark:text-gray-300") desain 
             | dan juga hal yang berbau 
             span.font-bold.text-gray-700(class="dark:text-gray-300") teknologi.
