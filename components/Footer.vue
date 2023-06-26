@@ -6,9 +6,9 @@ const year = new Date().getFullYear();
 //- Footer
 footer.footer-main.text-gray-300.bg-gray-900.border-t.border-transparent(class="dark:bg-gray-900/[.25] py-6 dark:border-gray-800")
   //- Footer Top
-  div.container.mx-auto.px-4.py-6.flex-col.gap-6(class="md:flex-row dark:text-gray-400 lg:max-w-7xl flex justify-between")
+  div.container.mx-auto.px-4.py-6.flex-col.gap-6(class="lg:flex-row dark:text-gray-400 lg:max-w-7xl flex justify-between")
     //- .col-md-6
-    .w-full(class="md:w-1/2 md:mb-0")
+    .w-full(class="lg:w-1/2 lg:mb-0")
       h3.font-bold.mb-2 Tentang Saya 
       p Saya adalah seorang fullstack developer yang suka sekali dengan desain dan juga tertarik di dunia teknologi. Saya adalah orang kelahiran Klaten, Jawa Tengah dan berdomisili di Ngawi, Jawa Timur.
 
@@ -25,7 +25,7 @@ footer.footer-main.text-gray-300.bg-gray-900.border-t.border-transparent(class="
           i.fab.fa-linkedin.fa-fw.text-xl
 
     //- .col-md-6.row
-    .w-full.grid.justify-between.gap-6.grid-flow-cols-dense(class="md:w-1/2 md:gap-0 grid-cols-2 md:grid-cols-3")
+    .w-full.grid.justify-between.gap-6.grid-flow-cols-dense(class="lg:w-1/2 lg:gap-0 grid-cols-2 lg:grid-cols-3")
       //- .col-md-3.col-6
       div.w-full
         h3.font-bold.mb-3 Ke(-rjaan/gabut)-an Saya 
@@ -59,7 +59,7 @@ footer.footer-main.text-gray-300.bg-gray-900.border-t.border-transparent(class="
             a.text-white.transition-all.duration-200(class="hover:text-gray-300", href="#") Tempat Ngopi
 
       //- .col-md-3
-      div.w-full(class="col-span-2 md:col-auto")
+      div.w-full(class="col-span-2 lg:col-auto")
         h3.font-bold.mb-3 Tautan Lain-lain
 
         ul.flex.flex-col.gap-2
@@ -69,7 +69,7 @@ footer.footer-main.text-gray-300.bg-gray-900.border-t.border-transparent(class="
             a.text-white.transition-all.duration-200(class="hover:text-gray-300", href="https://trakteer.id/cakadi190") Donasi
 
   //- Footer Bottom
-  .container.mx-auto.px-4.text-center.pt-8.border-t.border-gray-800.flex-col(class="md:text-left md:flex-row dark:text-gray-400 lg:max-w-7xl flex justify-between py-6")
+  .container.mx-auto.px-4.text-center.pt-8.border-t.border-gray-800.flex-col(class="lg:text-left lg:flex-row dark:text-gray-400 lg:max-w-7xl flex justify-between py-6")
     p Hak cipta &copy; {{ year ?? 2023 }} 
       a.text-white.duration-200.transition-all(class="hover:text-green-400", href="https://www.cakadi.my.id") Cak Adi
       | . Hak cipta dilindungi perundang-undangan.

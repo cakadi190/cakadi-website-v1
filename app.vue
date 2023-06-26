@@ -2,12 +2,14 @@
 useHead({
   titleTemplate: (titleChunk) => {
     return titleChunk ? `Cak Adi • ${titleChunk}` : 'Cak Adi';
-  }
+  },
+  meta: [
+    { name: 'og:image', key: 'og:image', content: '/images/va-ogImg.png' },
+  ]
 })
 
 // MotionPlugin
 import { MotionPlugin } from '@vueuse/motion'
-
 const nuxtApp = useNuxtApp();
 nuxtApp.vueApp.use(MotionPlugin)
 </script>
