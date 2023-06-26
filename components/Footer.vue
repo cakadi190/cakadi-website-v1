@@ -36,6 +36,8 @@ footer.footer-main.text-gray-300.bg-gray-900.border-t.border-transparent(class="
           li
             router-link.text-white.transition-all.duration-200(class="hover:text-gray-300", :to="{ name: 'penghargaan' }") Penghargaan
           li
+            router-link.text-white.transition-all.duration-200(class="hover:text-gray-300", :to="{ name: 'skill-dan-perkakas' }") Skill &amp; Perkakas
+          li
             router-link.text-white.transition-all.duration-200.flex.gap-2.items-center(class="cursor-not-allowed pointer-events-none", :to="{ name: 'penghargaan' }")
               span.text-gray-400 Layanan
               span.py-1.px-3.rounded-full.border.border-gray-300.text-xs Soon

@@ -4,6 +4,12 @@ useHead({
     return titleChunk ? `Cak Adi • ${titleChunk}` : 'Cak Adi';
   }
 })
+
+// MotionPlugin
+import { MotionPlugin } from '@vueuse/motion'
+
+const nuxtApp = useNuxtApp();
+nuxtApp.vueApp.use(MotionPlugin)
 </script>
 
 <style lang="postcss">
@@ -15,6 +21,6 @@ useHead({
 <template>
   <div>
     <NuxtLoadingIndicator />
-    <NuxtPage /> 
+    <NuxtPage />
   </div>
 </template>

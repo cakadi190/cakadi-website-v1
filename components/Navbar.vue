@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { onMounted } from 'vue';
+
 const menuLinks: Array<{ label: string, link: string, icon: string }> = [
   { label: 'Beranda', link: 'index', icon: 'fas fa-home' },
   { label: 'Portofolio', link: 'portofolio', icon: 'fas fa-wrench' },
@@ -42,24 +44,23 @@ onMounted(() => {
 </script>
 
 <template lang="pug">
-nav(id="navbar", class="fixed w-full duration-200 border-transparent top-0 z-40 border-b dark:border-gray-900")
-  div(class="container mx-auto px-4 lg:max-w-7xl flex justify-between")
-    a(class="h-[56px] outline-0 outline-none transition-all duration-200 md:hidden items-center flex", href="javascript:void(0)")
+nav(id="navbar", class="fixed w-full duration-200 border-transparent top-0 z-40 border-b dark:border-gray-900 py-2")
+  div(class="container mx-auto px-4 lg:max-w-7xl flex items-center justify-between")
+    a(class="outline-0 outline-none transition-all duration-200 md:hidden items-center flex", href="javascript:void(0)")
       i.fas.fa-bars
-    router-link.ml-4.mr-auto.text-xl.flex.justify-center.items-center.outline-none.outline-0(:to="{ name: 'index' }", class="md:ml-0 outline-0 outline-none transition-all duration-200 min-h-[56px] hover:text-green-500")
+    router-link.ml-4.mr-auto.text-xl.flex.justify-center.items-center.outline-none.outline-0(:to="{ name: 'index' }", class="md:ml-0 outline-0 outline-none transition-all duration-200 min-hover:text-green-500")
       img(class="dark:hidden", src="/images/brands/logo-color-long.svg", style="height: 24px")
       img(class="hidden dark:block", src="/images/brands/logo-white-long.svg", style="height: 24px")
 
-    .ml-auto.hidden(class="md:flex")
-      router-link(v-for="(menu, index) in menuLinks", :key="index", :to="{ name: menu.link }", :class="{ 'h-[56px] outline-0 outline-none flex gap-2 justify-center items-center px-4 border-b-2 border-transparent hover:bg-gradient-to-t hover:from-green-500/[.25] hover:text-green-600 duration-200 transition-all hover:border-green-500 hover:to-transparent active:bg-green-500 active:text-white focus:bg-green-500 focus:text-white': $route.name !== menu.link, 'flex gap-2 items-center px-4 bg-green-500 duration-200 transition-all border-transparent hover:border-transparent text-white hover:text-white hover:bg-green-600 active:bg-green-700 focus:bg-green-700': $route.name === menu.link }")
-        i.fa-fw.text-xs(:class="menu.icon")
+    .ml-auto.hidden.mr-2(class="md:flex md:items-center md:gap-2")
+      router-link.flex.gap-2.items-center.px-2.border-b-2.border-transparent.py-1.duration-200.transition-all(class="hover:text-green-600 hover:border-green-600", v-for="(menu, index) in menuLinks", :key="index", :to="{ name: menu.link }", :class="{ 'text-gray-500 dark:text-gray-400': $route.name !== menu.link, 'text-green-500': $route.name === menu.link }")
         span {{ menu.label }}
 
     .group.relative
-      a(href="javascript:void(0)", class="z-20 h-[56px] flex items-center px-4 py-2")
-        img(style="height: 24px", src="/images/flags/id-sq.svg")
+      a(href="javascript:void(0)", class="z-20 flex items-center w-10 h-10 rounded-full justify-center bg-slate-300")
+        img.rounded-full(style="height: 24px", src="/images/flags/id-sq.svg")
     
-      ul.absolute.z-10.hidden.h-0.rounded-b-md.border.border-gray-200.bg-white.p-2.text-gray-700.transition-all.duration-200.right-0(class='min-w-[220px] group-hover:block group-hover:h-max dark:border-gray-800 dark:bg-gray-900')
+      ul.absolute.z-10.hidden.h-0.rounded-md.border.border-gray-200.bg-white.p-2.text-gray-700.transition-all.duration-200.right-0(class='min-w-[220px] group-hover:block group-hover:h-max dark:border-gray-800 dark:bg-gray-900')
         li
           h6.px-2.mb-3.text-gray-400(class="dark:text-gray-500") Bahasa : Indonesia
         li
@@ -71,11 +72,11 @@ nav(id="navbar", class="fixed w-full duration-200 border-transparent top-0 z-40 
             img(style="height: 20px", src="/images/flags/us.svg")
             span English (USA)
 
-    .group.relative
-      a(href="javascript:void(0)", class="z-20 h-[56px] flex items-center px-4 py-2")
+    .group.relative.ml-2
+      a(href="javascript:void(0)", class="z-20 h-10 w-10 flex items-center px-3 py-1")
         i.fas.fa-ellipsis-v.fa-fw
     
-      ul.absolute.z-10.hidden.h-0.rounded-b-md.border.border-gray-200.bg-white.p-2.text-gray-700.transition-all.duration-200.right-0(class='min-w-[220px] group-hover:block group-hover:h-max dark:border-gray-800 dark:bg-gray-900')
+      ul.absolute.z-10.hidden.h-0.rounded-md.border.border-gray-200.bg-white.p-2.text-gray-700.transition-all.duration-200.right-0(class='min-w-[220px] group-hover:block group-hover:h-max dark:border-gray-800 dark:bg-gray-900')
         li
           h6.px-4.mb-2.text-gray-400.pt-2(class="dark:text-gray-500") Ikuti Media Sosial Saya
         li

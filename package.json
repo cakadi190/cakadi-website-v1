@@ -22,11 +22,14 @@
     "vue-pug-plugin": "^2.0.3"
   },
   "dependencies": {
+    "@duskmoon/vue3-typed-js": "^0.0.4",
     "@fontsource/karla": "^5.0.3",
     "@fortawesome/fontawesome-free": "^6.4.0",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@vueuse/motion": "^2.0.0",
     "boxicons": "^2.1.4",
     "remixicon": "^3.4.0",
-    "rippleui": "^1.12.1"
+    "rippleui": "^1.12.1",
+    "vue-typed-js": "^0.1.2"
   }
 }
