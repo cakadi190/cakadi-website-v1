@@ -2,7 +2,11 @@
 import layout from '~/layouts/default.vue'
 
 useHead({
-  title: 'Kontak Saya'
+  title: 'Kontak Saya',
+  meta: [
+    { key: 'description', name: 'description', content: 'Yang mau terhubung dengan saya di berbagai platform sosial media ataupun secara bisnis bisa kamu akses disini.' },
+    { key: 'og:description', name: 'og:description', content: 'Yang mau terhubung dengan saya di berbagai platform sosial media ataupun secara bisnis bisa kamu akses disini.' },
+  ]
 });
 </script>
 
@@ -47,7 +51,7 @@ layout#contact-me
                     | Whatsapp
                   td.px-4.py-4
                     | 08133355**** 
-                    span.text-sky-500 
+                    span.text-sky-700 
                       i.fas.fa-info-circle.text-sm.ml-2.mr-1
                       | Mohon surati saya dulu
                 tr.bg-white(class='dark:bg-transparent dark:border-gray-800')
@@ -134,7 +138,7 @@ layout#contact-me
 
       div.w-full(class="md:w-1/4 lg:-mt-16") 
         .bg-white.top-0.border.border-gray-200(class="md:sticky md:top-20 lg:top-16 dark:border-gray-800 dark:bg-gray-900 rounded-lg")
-          h6.font-bold.px-5.py-4.border-b.border-gray-200(class="dark:border-gray-800") Tabel Konten
+          div.font-bold.px-5.py-4.border-b.border-gray-200(class="dark:border-gray-800") Tabel Konten
           div.my-2
             a.py-2.px-5.block.duration-200.transition-all(class="hover:bg-green-500/[.125] hover:text-green-600", href="#kontak-saya") Kontak
             a.py-2.px-5.block.duration-200.transition-all(class="hover:bg-green-500/[.125] hover:text-green-600", href="#medsos-saya") Medsos Saya

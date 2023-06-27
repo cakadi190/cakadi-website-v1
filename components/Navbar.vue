@@ -71,19 +71,19 @@ const sidebarToggler = () => {
 div
   nav(id="navbar", ref="refNavbar", class="fixed w-full duration-200 border-transparent top-0 z-40 border-b dark:border-gray-900 py-2")
     div(class="container mx-auto px-4 md:max-w-7xl flex items-center justify-between")
-      a(class="outline-0 outline-none transition-all duration-200 lg:hidden items-center flex", href="javascript:void(0)", @click="sidebarToggler")
+      a(aria-label="Toggle Sidebar", rel="nofollow", class="outline-0 outline-none transition-all duration-200 lg:hidden items-center flex", href="javascript:void(0)", @click="sidebarToggler")
         i.fas.fa-bars.text-xl
       router-link.ml-6.mr-auto.text-xl.flex.justify-center.items-center.outline-none.outline-0(:to="{ name: 'index' }", class="lg:ml-0 outline-0 outline-none transition-all duration-200 min-hover:text-green-500")
-        img(class="dark:hidden", src="/images/brands/logo-color-long.svg", style="height: 24px")
-        img(class="hidden dark:block", src="/images/brands/logo-white-long.svg", style="height: 24px")
+        img(alt="Logo Cak Adi Colored", class="dark:hidden", src="/images/brands/logo-color-long.svg", style="height: 24px")
+        img(alt="Logo Cak Adi White", class="hidden dark:block", src="/images/brands/logo-white-long.svg", style="height: 24px")
 
       .ml-auto.hidden.mr-2(class="lg:flex lg:items-center lg:gap-2")
         router-link.flex.gap-2.items-center.px-2.border-b-2.border-transparent.py-1.duration-200.transition-all(class="hover:text-green-600 hover:border-green-600", v-for="(menu, index) in menuLinks", :key="index", :to="{ name: menu.link }", :class="{ 'text-gray-500 dark:text-gray-400': $route.name !== menu.link, 'text-green-500': $route.name === menu.link }")
           span {{ menu.label }}
 
       .group.relative
-        a(href="javascript:void(0)", class="z-20 flex items-center w-10 h-10 rounded-full justify-center bg-slate-200 dark:bg-slate-300/[.25]")
-          img.rounded-full(style="height: 24px", src="/images/flags/id-sq.svg")
+        a(aria-label="Language Changer", rel="nofollow", href="javascript:void(0)", class="z-20 flex items-center w-10 h-10 rounded-full justify-center bg-slate-200 dark:bg-slate-300/[.25]")
+          img.rounded-full(alt="Indonesian Flag", style="height: 24px", src="/images/flags/id-sq.svg")
       
         ul.absolute.z-10.hidden.h-0.rounded-md.border.border-gray-200.bg-white.p-2.text-gray-700.transition-all.duration-200.right-0(class='min-w-[220px] group-hover:block group-hover:h-max dark:border-gray-800 dark:bg-gray-900')
           li
@@ -98,30 +98,30 @@ div
               span English (USA)
 
       .group.relative.ml-2
-        a(href="javascript:void(0)", class="z-20 h-10 w-10 flex items-center px-3 py-1")
+        a(aria-label="Social Media Menu", rel="nofollow", href="javascript:void(0)", class="z-20 h-10 w-10 flex items-center px-3 py-1")
           i.fas.fa-ellipsis-v.fa-fw
       
         ul.absolute.z-10.hidden.h-0.rounded-md.border.border-gray-200.bg-white.p-2.text-gray-700.transition-all.duration-200.right-0(class='min-w-[220px] group-hover:block group-hover:h-max dark:border-gray-800 dark:bg-gray-900')
           li
             h6.px-4.mb-2.text-gray-400.pt-2(class="dark:text-gray-500") Ikuti Media Sosial Saya
           li
-            a.flex.w-full.items-center.rounded-md.p-2.px-4.outline-none.outline-0.transition-all.duration-200(class='hover:bg-gray-900/[.075] focus:bg-green-500 focus:text-white active:bg-green-500 active:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:bg-green-500 dark:focus:text-white dark:active:bg-green-500 gap-2 flex dark:active:text-white', href='https://www.facebook.com/cakadi190')
+            a.flex.w-full.items-center.rounded-md.p-2.px-4.outline-none.outline-0.transition-all.duration-200(aria-label="Cak Adi's Facebook", class='hover:bg-gray-900/[.075] focus:bg-green-500 focus:text-white active:bg-green-500 active:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:bg-green-500 dark:focus:text-white dark:active:bg-green-500 gap-2 flex dark:active:text-white', href='https://www.facebook.com/cakadi190')
               i.fab.fa-facebook
               span Facebook
           li
-            a.flex.w-full.items-center.rounded-md.p-2.px-4.outline-none.outline-0.transition-all.duration-200(class='hover:bg-gray-900/[.075] focus:bg-green-500 focus:text-white active:bg-green-500 active:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:bg-green-500 dark:focus:text-white dark:active:bg-green-500 gap-2 flex dark:active:text-white', href='https://www.twitter.com/cakadi190')
+            a.flex.w-full.items-center.rounded-md.p-2.px-4.outline-none.outline-0.transition-all.duration-200(aria-label="Cak Adi's Twitter", class='hover:bg-gray-900/[.075] focus:bg-green-500 focus:text-white active:bg-green-500 active:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:bg-green-500 dark:focus:text-white dark:active:bg-green-500 gap-2 flex dark:active:text-white', href='https://www.twitter.com/cakadi190')
               i.fab.fa-twitter
               span Twitter
           li
-            a.flex.w-full.items-center.rounded-md.p-2.px-4.outline-none.outline-0.transition-all.duration-200(class='hover:bg-gray-900/[.075] focus:bg-green-500 focus:text-white active:bg-green-500 active:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:bg-green-500 dark:focus:text-white dark:active:bg-green-500 gap-2 flex dark:active:text-white', href='https://www.instagram.com/cakadi190')
+            a.flex.w-full.items-center.rounded-md.p-2.px-4.outline-none.outline-0.transition-all.duration-200(aria-label="Cak Adi's Instagram", class='hover:bg-gray-900/[.075] focus:bg-green-500 focus:text-white active:bg-green-500 active:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:bg-green-500 dark:focus:text-white dark:active:bg-green-500 gap-2 flex dark:active:text-white', href='https://www.instagram.com/cakadi190')
               i.fab.fa-instagram
               span Instagram
           li
-            a.flex.w-full.items-center.rounded-md.p-2.px-4.outline-none.outline-0.transition-all.duration-200(class='hover:bg-gray-900/[.075] focus:bg-green-500 focus:text-white active:bg-green-500 active:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:bg-green-500 dark:focus:text-white dark:active:bg-green-500 gap-2 flex dark:active:text-white', href='https://www.linkedin.com/in/cakadi190')
+            a.flex.w-full.items-center.rounded-md.p-2.px-4.outline-none.outline-0.transition-all.duration-200(aria-label="Cak Adi's Linkedin", class='hover:bg-gray-900/[.075] focus:bg-green-500 focus:text-white active:bg-green-500 active:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:bg-green-500 dark:focus:text-white dark:active:bg-green-500 gap-2 flex dark:active:text-white', href='https://www.linkedin.com/in/cakadi190')
               i.fab.fa-linkedin
               span LinkedIn
           li
-            a.flex.w-full.items-center.rounded-md.p-2.px-4.outline-none.outline-0.transition-all.duration-200(class='hover:bg-gray-900/[.075] focus:bg-green-500 focus:text-white active:bg-green-500 active:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:bg-green-500 dark:focus:text-white dark:active:bg-green-500 gap-2 flex dark:active:text-white', href='https://www.youtube.com/@cakadi190')
+            a.flex.w-full.items-center.rounded-md.p-2.px-4.outline-none.outline-0.transition-all.duration-200(aria-label="Cak Adi's Youtube", class='hover:bg-gray-900/[.075] focus:bg-green-500 focus:text-white active:bg-green-500 active:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:bg-green-500 dark:focus:text-white dark:active:bg-green-500 gap-2 flex dark:active:text-white', href='https://www.youtube.com/@cakadi190')
               i.fab.fa-youtube
               span Youtube
 
@@ -129,10 +129,10 @@ div
   aside.fixed.top-0.left-0.h-screen.bg-white.border-r.border-transparent.z-50.flex.duration-200.transition-all.flex-col.rounded-r-xl(class="w-[20rem] dark:border-slate-700 dark:bg-slate-900 ml-[-100%]", ref="refSidebar")
     .px-6.pt-5.pb-7.flex.justify-between
       router-link.max-w-max.text-xl.flex.items-center.outline-none.outline-0(:to="{ name: 'index' }", class="outline-0 outline-none transition-all duration-200 min-hover:text-green-500")
-        img(class="dark:hidden", src="/images/brands/logo-color-long.svg", style="height: 24px")
-        img(class="hidden dark:block", src="/images/brands/logo-white-long.svg", style="height: 24px")
+        img(alt="Logo Cak Adi Colored", class="dark:hidden", src="/images/brands/logo-color-long.svg", style="height: 24px")
+        img(alt="Logo Cak Adi White", class="hidden dark:block", src="/images/brands/logo-white-long.svg", style="height: 24px")
 
-      button.h-8.w-8.flex.items-center.justify-center(@click="sidebarToggler")
+      button.h-8.w-8.flex.items-center.justify-center(aria-label="Close Sidebar", @click="sidebarToggler")
         i.fas.fa-close.text-2xl
 
     div.px-4.mr-2.flex.flex-col.gap-1.grow.transition-all.duration-200

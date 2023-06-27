@@ -13,15 +13,15 @@ footer.footer-main.text-gray-300.bg-gray-900.border-t.border-transparent(class="
       p Saya adalah seorang fullstack developer yang suka sekali dengan desain dan juga tertarik di dunia teknologi. Saya adalah orang kelahiran Klaten, Jawa Tengah dan berdomisili di Ngawi, Jawa Timur.
 
       .flex.gap-3.mt-4
-        a(class="hover:text-white duration-200 transition-all", href="https://www.facebook.com/cakadi190")
+        a(aria-label="Cak Adi's Facebook", class="hover:text-white duration-200 transition-all", href="https://www.facebook.com/cakadi190")
           i.fab.fa-facebook.fa-fw.text-xl
-        a(class="hover:text-white duration-200 transition-all", href="https://www.twitter.com/cakadi190")
+        a(aria-label="Cak Adi's Twitter", class="hover:text-white duration-200 transition-all", href="https://www.twitter.com/cakadi190")
           i.fab.fa-twitter.fa-fw.text-xl
-        a(class="hover:text-white duration-200 transition-all", href="https://www.figma.com/@cakadi190")
+        a(aria-label="Cak Adi's Figma", class="hover:text-white duration-200 transition-all", href="https://www.figma.com/@cakadi190")
           i.fab.fa-figma.fa-fw.text-xl
-        a(class="hover:text-white duration-200 transition-all", href="https://www.instagram.com/cakadi190")
+        a(aria-label="Cak Adi's Instagram", class="hover:text-white duration-200 transition-all", href="https://www.instagram.com/cakadi190")
           i.fab.fa-instagram.fa-fw.text-xl
-        a(class="hover:text-white duration-200 transition-all", href="https://www.linkedin.com/in/cakadi190")
+        a(aria-label="Cak Adi's Linkedin", class="hover:text-white duration-200 transition-all", href="https://www.linkedin.com/in/cakadi190")
           i.fab.fa-linkedin.fa-fw.text-xl
 
     //- .col-md-6.row

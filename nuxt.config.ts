@@ -8,8 +8,11 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      "meta": [
-        { "name": "viewport", "content": "width=device-width, initial-scale=1, user-scalable=0" },
+      htmlAttrs: {
+        lang: 'id-ID'
+      },
+      meta: [
+        { "name": "viewport", "content": "width=device-width, initial-scale=1" },
         { "charset": "utf-8" },
       ],
       link: [
