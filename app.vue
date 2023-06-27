@@ -18,6 +18,10 @@ nuxtApp.vueApp.use(MotionPlugin)
 #header-banner {
   @apply bg-gradient-to-b from-gray-100 dark:from-gray-900;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 </style>
 
 <template>

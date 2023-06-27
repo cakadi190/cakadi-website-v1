@@ -71,7 +71,7 @@ const sidebarToggler = () => {
 div
   nav(id="navbar", ref="refNavbar", class="fixed w-full duration-200 border-transparent top-0 z-40 border-b dark:border-gray-900 py-2")
     div(class="container mx-auto px-4 md:max-w-7xl flex items-center justify-between")
-      a(aria-label="Toggle Sidebar", rel="nofollow", class="outline-0 outline-none transition-all duration-200 lg:hidden items-center flex", href="javascript:void(0)", @click="sidebarToggler")
+      button(aria-label="Toggle Sidebar", rel="nofollow", class="outline-0 outline-none transition-all duration-200 lg:hidden items-center flex", type="button", @click="sidebarToggler")
         i.fas.fa-bars.text-xl
       router-link.ml-6.mr-auto.text-xl.flex.justify-center.items-center.outline-none.outline-0(:to="{ name: 'index' }", class="lg:ml-0 outline-0 outline-none transition-all duration-200 min-hover:text-green-500")
         img(alt="Logo Cak Adi Colored", class="dark:hidden", src="/images/brands/logo-color-long.svg", style="height: 24px")
@@ -82,7 +82,7 @@ div
           span {{ menu.label }}
 
       .group.relative
-        a(aria-label="Language Changer", rel="nofollow", href="javascript:void(0)", class="z-20 flex items-center w-10 h-10 rounded-full justify-center bg-slate-200 dark:bg-slate-300/[.25]")
+        button(aria-label="Language Changer", rel="nofollow", type="button", class="z-20 flex items-center w-10 h-10 rounded-full justify-center bg-slate-200 dark:bg-slate-300/[.25]")
           img.rounded-full(alt="Indonesian Flag", style="height: 24px", src="/images/flags/id-sq.svg")
       
         ul.absolute.z-10.hidden.h-0.rounded-md.border.border-gray-200.bg-white.p-2.text-gray-700.transition-all.duration-200.right-0(class='min-w-[220px] group-hover:block group-hover:h-max dark:border-gray-800 dark:bg-gray-900')
@@ -98,7 +98,7 @@ div
               span English (USA)
 
       .group.relative.ml-2
-        a(aria-label="Social Media Menu", rel="nofollow", href="javascript:void(0)", class="z-20 h-10 w-10 flex items-center px-3 py-1")
+        button(aria-label="Social Media Menu", rel="nofollow", type="button", class="z-20 h-10 w-10 flex items-center px-3 py-1")
           i.fas.fa-ellipsis-v.fa-fw
       
         ul.absolute.z-10.hidden.h-0.rounded-md.border.border-gray-200.bg-white.p-2.text-gray-700.transition-all.duration-200.right-0(class='min-w-[220px] group-hover:block group-hover:h-max dark:border-gray-800 dark:bg-gray-900')
