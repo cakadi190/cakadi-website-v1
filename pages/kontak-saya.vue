@@ -12,8 +12,8 @@ layout#contact-me
   template(#page-desc) Biar semakin dekat dan semakin akrab, biar enak buat ngobrolnya. Tapi ada batasannya lho!
 
   section.pb-16.pt-6.gap-2.text-slate-500(class="dark:text-slate-400")
-    div(class="container lg:text-left mx-auto px-4 lg:max-w-7xl justify-between flex flex-col-reverse lg:flex-row gap-6 lg:gap-12")
-      div.w-full(class="lg:w-3/4")
+    div(class="container sm:text-left mx-auto px-4 sm:max-w-7xl justify-between flex flex-col-reverse md:flex-row gap-6 lg:gap-12")
+      div.w-full(class="md:w-3/4")
         div(class="lg:pl-20 border-l border-transparent lg:border-slate-200 dark:lg:border-slate-800") 
           p.pb-6 Mohon maaf sebelumnya, sedikit mengingatkan kalau semua informasi yang saya cantumkan disini hanya untuk keperluan bisnis saja. Kalau ada pertanyaan gausah malu buat chat di sosial media saya, tapi dengan catatan harus memperkenalkan diri dulu biar gak aku anggap&nbsp;
             em spammer
@@ -126,14 +126,14 @@ layout#contact-me
                       i.fas.fa-external-link.text-sm
                 tr.bg-white(class='dark:bg-transparent dark:border-gray-800')
                   th.px-4.py-4.font-medium.text-gray-900.whitespace-nowrap(scope='row', class='dark:text-white')
-                    | Alamat
+                    | LinkedIn
                   td.px-4.py-4
                     a.underline.flex.gap-2.max-w-max(href="https://www.linkedin.com/in/cakadi190")
                       span https://www.linkedin.com/in/cakadi190
                       i.fas.fa-external-link.text-sm
 
-      div.w-full(class="lg:w-1/4 lg:-mt-16") 
-        .bg-white.top-0.border.border-gray-200(class="lg:sticky lg:top-16 dark:border-gray-800 dark:bg-gray-900 rounded-lg")
+      div.w-full(class="md:w-1/4 lg:-mt-16") 
+        .bg-white.top-0.border.border-gray-200(class="md:sticky md:top-20 lg:top-16 dark:border-gray-800 dark:bg-gray-900 rounded-lg")
           h6.font-bold.px-5.py-4.border-b.border-gray-200(class="dark:border-gray-800") Tabel Konten
           div.my-2
             a.py-2.px-5.block.duration-200.transition-all(class="hover:bg-green-500/[.125] hover:text-green-600", href="#kontak-saya") Kontak

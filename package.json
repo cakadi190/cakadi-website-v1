@@ -30,6 +30,7 @@
     "boxicons": "^2.1.4",
     "remixicon": "^3.4.0",
     "rippleui": "^1.12.1",
+    "vue": "^3.3.0",
     "vue-typed-js": "^0.1.2"
   }
 }

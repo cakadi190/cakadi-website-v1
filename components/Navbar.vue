@@ -70,7 +70,7 @@ const sidebarToggler = () => {
 <template lang="pug">
 div
   nav(id="navbar", ref="refNavbar", class="fixed w-full duration-200 border-transparent top-0 z-40 border-b dark:border-gray-900 py-2")
-    div(class="container mx-auto px-4 lg:max-w-7xl flex items-center justify-between")
+    div(class="container mx-auto px-4 md:max-w-7xl flex items-center justify-between")
       a(class="outline-0 outline-none transition-all duration-200 lg:hidden items-center flex", href="javascript:void(0)", @click="sidebarToggler")
         i.fas.fa-bars.text-xl
       router-link.ml-6.mr-auto.text-xl.flex.justify-center.items-center.outline-none.outline-0(:to="{ name: 'index' }", class="lg:ml-0 outline-0 outline-none transition-all duration-200 min-hover:text-green-500")

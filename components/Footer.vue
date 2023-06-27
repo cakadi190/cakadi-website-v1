@@ -6,7 +6,7 @@ const year = new Date().getFullYear();
 //- Footer
 footer.footer-main.text-gray-300.bg-gray-900.border-t.border-transparent(class="dark:bg-gray-900/[.25] py-6 dark:border-gray-800")
   //- Footer Top
-  div.container.mx-auto.px-4.py-6.flex-col.gap-6(class="lg:flex-row dark:text-gray-400 lg:max-w-7xl flex justify-between")
+  div.container.mx-auto.px-4.py-6.flex-col.gap-6(class="lg:flex-row dark:text-gray-400 md:max-w-7xl flex justify-between")
     //- .col-md-6
     .w-full(class="lg:w-1/2 lg:mb-0")
       h3.font-bold.mb-2 Tentang Saya 
@@ -25,7 +25,7 @@ footer.footer-main.text-gray-300.bg-gray-900.border-t.border-transparent(class="
           i.fab.fa-linkedin.fa-fw.text-xl
 
     //- .col-md-6.row
-    .w-full.grid.justify-between.gap-6.grid-flow-cols-dense(class="lg:w-1/2 lg:gap-0 grid-cols-2 lg:grid-cols-3")
+    .w-full.grid.justify-between.gap-6.grid-flow-cols-dense(class="lg:w-1/2 lg:gap-0 grid-cols-2 sm:grid-cols-3")
       //- .col-md-3.col-6
       div.w-full
         h3.font-bold.mb-3 Ke(-rjaan/gabut)-an Saya 
@@ -59,7 +59,7 @@ footer.footer-main.text-gray-300.bg-gray-900.border-t.border-transparent(class="
             a.text-white.transition-all.duration-200(class="hover:text-gray-300", href="#") Tempat Ngopi
 
       //- .col-md-3
-      div.w-full(class="col-span-2 lg:col-auto")
+      div.w-full(class="col-span-2 sm:col-auto")
         h3.font-bold.mb-3 Tautan Lain-lain
 
         ul.flex.flex-col.gap-2
