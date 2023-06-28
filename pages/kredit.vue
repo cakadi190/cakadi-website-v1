@@ -2,7 +2,11 @@
 import layout from '~/layouts/default.vue'
 
 useHead({
-  title: 'Kredit dan Atribusi'
+  title: 'Kredit dan Atribusi',
+  meta: [
+    { key: 'description', name: 'description', content: 'Terimakasih kepada semua pendukung, sponsor dan juga kontributor yang telah membantu dan memberikan semua inspirasi dalam membuat web saya ini.' },
+    { key: 'og:description', name: 'og:description', content: 'Terimakasih kepada semua pendukung, sponsor dan juga kontributor yang telah membantu dan memberikan semua inspirasi dalam membuat web saya ini.' },
+  ]
 });
 </script>
 
@@ -23,7 +27,7 @@ layout#career
           blockquote
             p.mb-3 &mdash; Hmm... masih belum ada sponsor.
 
-          .p-4(class="bg-sky-500/[.25] text-sky-600 rounded-md border-sky-500/[.25] border") 
+          .p-4(class="bg-sky-500/[.15] text-sky-600 rounded-md border-sky-500/[.25] border") 
             h6.text-xl.font-bold.mb-2 Informasi
             p Saat ini saya belum membuka sponsor, karena masih dalam tahap pengajuan.
 
@@ -41,6 +45,52 @@ layout#career
             p Saat ini saya belum membuka kontributor proyek CV online ini. Nantikan update selanjutnya (perkiraan di versi 1.0.0-rc).
 
           hr.border-slate-200.pb-12.mt-12(class="dark:border-slate-700")
+          
+          h3.font-bold.mb-5.text-3xl.relative.group.-mt-20.pt-20.flex.items-center.gap-4(class="hover:lg:-ml-12", id="atribusi")
+            a(class="hidden group-hover:lg:flex font-normal rounded w-8 h-8 bg-slate-100 border border-slate-200 justify-center dark:bg-gray-900 dark:border-gray-800 items-center", href="#atribusi") #
+            span Terimakasih! 😁👍
+
+          p.pb-6 Aku sangat berterimakasih kepada semua pihak yang udah bantu bikin web ini, mulai inspirasi sampai aset gambarnya. Terutama kepada:
+
+          ul.flex.flex-col.gap-4
+            li.flex.gap-4(class="md:gap-6")
+              i.fas.fa-square.text-base
+              div
+                | Semua&nbsp;
+                a.text-green-600(class="dark:text-green-500", href="#sponsor") Sponsor
+                | ;&nbsp;
+                a.text-green-600(class="dark:text-green-500", href="#kontributor") Kontributor
+                | ;&nbsp;elemen dari grup programmer&nbsp;
+                a.text-green-600(class="dark:text-green-500", href="https://instagram.com/uniicode.id?igshid=MzRlODBiNWFlZA==") Uniicode
+                | , Forum Linux Indonesia, GNU/Weeb dan grup programmer lainnya.
+            li.flex.gap-4(class="md:gap-6")
+              i.fas.fa-square.text-base
+              div
+                | CSS Library dari&nbsp;
+                a.text-green-600(class="dark:text-green-500", href="https://tailwindcss.com") TailwindCSS
+                | &nbsp;dan Framework Web dari&nbsp;
+                a.text-green-600(class="dark:text-green-500", href="https://nuxt.com") NuxtJS
+                | .
+            li.flex.gap-4(class="md:gap-6")
+              i.fas.fa-square.text-base
+              div
+                | Emoji dari&nbsp;
+                a.text-green-600(class="dark:text-green-500", href="https://github.com/microsoft/fluentui-emoji") Microsoft Fluent Emoji
+                | .
+            li.flex.gap-4(class="md:gap-6")
+              i.fas.fa-square.text-base
+              div
+                h6.font-bold.text-gray-600.mb-3(class="dark:text-gray-200") 
+                  a.underlined(href="https://enji.dev") Web Mas Enji
+                  span.text-gray-400 &nbsp;dan 
+                  a.underlined(href="https://theodorusclarence.com/") Web Mas Theo
+                p Terimakasih kepada Mas Enji dan Mas Theo yang udah bikin web kece badai yang bikin aku terkesima dan terinspirasi dari masnya.
+            li.flex.gap-4(class="md:gap-6")
+              i.fas.fa-square.text-base
+              div
+                | Dan semua komunitas sumber terbuka&nbsp;
+                a.text-green-600(class="dark:text-green-500", target="_blank", href="https://github.com/cakadi190/cakadi-website/blob/main/package.json") pada perkakas ini
+                | .
 
       div.w-full(class="md:w-1/4 lg:-mt-16") 
         .bg-white.top-0.border.border-gray-200(class="md:sticky md:top-20 lg:top-16 dark:border-gray-800 dark:bg-gray-900 rounded-lg")
