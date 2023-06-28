@@ -2,7 +2,7 @@ export default defineEventHandler((event) => {
   return [
     {
       "name": "Politeknik Negeri Madiun",
-      "logo": null,
+      "logo": "/images/education/pnm.png",
       "web": "https://www.pnm.ac.id",
       "level": "university",
       "grade": "Diploma 3 (D3)",
@@ -15,7 +15,7 @@ export default defineEventHandler((event) => {
     },
     {
       "name": "SMA Negeri 1 Ngawi",
-      "logo": null,
+      "logo": "/images/education/smasa.jpeg",
       "web": "https://www.sman1ngawi.sch.id",
       "level": "shs",
       "grade": null,
