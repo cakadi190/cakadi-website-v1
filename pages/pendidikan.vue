@@ -52,7 +52,7 @@ const dateConverter = (date: string): string => {
                   <div>
                     <h6 class="font-bold text-2xl text-gray-600 dark:text-gray-300">{{ school.name }} <span v-if="school.grade">({{ school.grade }})</span></h6>
 
-                    <div class="flex gap-2 items-center">
+                    <div class="flex flex-wrap gap-2 items-center">
                       <span v-if="school.departement" class="inline-block">{{ school.departement }} <span v-if="school.study_program">/ {{ school.study_program }}</span></span>
                       <i v-if="school.departement" class="fas fa-circle text-[.5rem]"></i>
                       <a v-if="school.web" class="hover:text-green-700 hover:underline transition-all duration-200 dark:hover:text-green-500" :href="school.web">{{ school.web?.match(/^(?:.*?\.)?([a-zA-Z0-9\-_]{3,}\.(?:\w{2,8}|\w{2,4}\.\w{2,4}))$/)?.[1] }}</a>
