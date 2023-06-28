@@ -92,7 +92,7 @@ layout#career
                 a.text-green-600(class="dark:text-green-500", target="_blank", href="https://github.com/cakadi190/cakadi-website/blob/main/package.json") pada perkakas ini
                 | .
 
-      div.w-full(class="md:w-1/4 lg:-mt-16") 
+      div.w-full(class="md:w-1/4 z-20 lg:-mt-16") 
         .bg-white.top-0.border.border-gray-200(class="md:sticky md:top-20 lg:top-16 dark:border-gray-800 dark:bg-gray-900 rounded-lg")
           div.font-bold.px-5.py-4.border-b.border-gray-200(class="dark:border-gray-800") Tabel Konten
           div.my-2

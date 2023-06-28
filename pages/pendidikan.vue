@@ -74,7 +74,7 @@ const dateConverter = (date: string): string => {
           </div>
         </div>
         <div class="w-full md:w-1/4 lg:-mt-16">
-          <div class="bg-white top-0 border border-gray-200 md:sticky md:top-20 lg:top-16 dark:border-gray-800 dark:bg-gray-900 rounded-lg">
+          <div class="bg-white z-20 top-0 border border-gray-200 md:sticky md:top-20 lg:top-16 dark:border-gray-800 dark:bg-gray-900 rounded-lg">
             <div class="font-bold px-5 py-4 border-b border-gray-200 dark:border-gray-800">Tabel Konten</div>
             <div v-for="(school, index) in data" :key="index" class="my-2">
               <a class="py-2 px-5 block duration-200 transition-all hover:bg-green-500/[.125] hover:text-green-600" :href="'#' + school.name.replaceAll(/[\W_]+/g, '').toLowerCase()">{{ school.name }}</a>
