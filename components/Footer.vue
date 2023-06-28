@@ -56,7 +56,7 @@ footer.footer-main.text-gray-300.bg-gray-900.border-t.border-transparent(class="
           li
             a.text-white.transition-all.duration-200(class="hover:text-gray-300", href="#") Referensi Ngoding
           li
-            a.text-white.transition-all.duration-200(class="hover:text-gray-300", href="#") Tempat Ngopi
+            router-link.text-white.transition-all.duration-200(class="hover:text-gray-300", to="/sumber-daya/tempat-ngopi") Tempat Ngopi
 
       //- .col-md-3
       div.w-full(class="col-span-2 sm:col-auto")
@@ -64,9 +64,11 @@ footer.footer-main.text-gray-300.bg-gray-900.border-t.border-transparent(class="
 
         ul.flex.flex-col.gap-2
           li
-            router-link.text-white.transition-all.duration-200(class="hover:text-gray-300", :to="{ path: '/kredit' }") Kredit
+            router-link.text-white.transition-all.duration-200(class="hover:text-gray-300", :to="{ name: 'kredit' }") Kredit
           li
-            a.text-white.transition-all.duration-200(class="hover:text-gray-300", href="https://trakteer.id/cakadi190") Donasi
+            a.text-white.transition-all.duration-200(class="hover:text-gray-300", href="https://trakteer.id/cakadi190") Donasi Di trakteer.id
+          li
+            a.text-white.transition-all.duration-200(class="hover:text-gray-300", href="https://ko-fi.com/cakadi190") Donasi Di ko-fi.com
 
   //- Footer Bottom
   .container.mx-auto.px-4.text-center.pt-8.border-t.border-gray-800.flex-col(class="lg:text-left lg:flex-row dark:text-gray-400 lg:max-w-7xl flex justify-between py-6")
