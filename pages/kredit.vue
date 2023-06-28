@@ -93,7 +93,7 @@ layout#career
                 | .
 
       div.w-full(class="md:w-1/4 z-20 lg:-mt-16") 
-        .bg-white.top-0.border.border-gray-200(class="md:sticky md:top-20 lg:top-16 dark:border-gray-800 dark:bg-gray-900 rounded-lg")
+        .bg-white.top-0.border.border-gray-200(class="sticky md:top-20 lg:top-16 dark:border-gray-800 dark:bg-gray-900 rounded-lg")
           div.font-bold.px-5.py-4.border-b.border-gray-200(class="dark:border-gray-800") Tabel Konten
           div.my-2
             a.py-2.px-5.block.duration-200.transition-all(class="hover:bg-green-500/[.125] hover:text-green-600", href="#sponsor") Sponsor
