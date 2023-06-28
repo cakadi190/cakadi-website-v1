@@ -56,6 +56,8 @@ footer.footer-main.text-gray-300.bg-gray-900.border-t.border-transparent(class="
           li
             router-link.text-white.transition-all.duration-200(class="hover:text-gray-300", to="/sumber-daya/tempat-belajar-ngoding") Referensi Ngoding
           li
+            router-link.text-white.transition-all.duration-200(class="hover:text-gray-300", to="/snippet") Contekan Kode
+          li
             router-link.text-white.transition-all.duration-200(class="hover:text-gray-300", to="/sumber-daya/tempat-ngopi") Tempat Ngopi
 
       //- .col-md-3

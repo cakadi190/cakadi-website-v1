@@ -51,7 +51,7 @@ layout#contact-me
                     | Whatsapp
                   td.px-4.py-4.flex.gap-2.flex-col(class="md:flex-row md:gap-4")
                     | 08133355**** 
-                    span.text-sky-700.flex.gap-1
+                    span.text-sky-700.flex.gap-1(class="dark:text-sky-500")
                       i.fas.fa-info-circle.text-sm
                       | Mohon surati saya dulu
                 tr.bg-white(class='dark:bg-transparent dark:border-gray-800')
