@@ -6,7 +6,7 @@
       <p v-motion :initial="{ opacity: 0, x: -100 }" :enter="{ opacity: 1, x: 0 }" class="mt-3 text-base leading-7 text-gray-600 dark:text-gray-400">Sorry, I couldn't find the page you're looking for.</p>
       <div v-motion :initial="{ opacity: 0, x: 100 }" :enter="{ opacity: 1, x: 0 }" class="mt-10 flex items-center justify-center gap-x-6">
         <router-link :to="{ name: 'index' }" class="transition-all duration-200 rounded-md bg-indigo-600 px-4 py-2.5 text-sm text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Go back home</router-link>
-        <a href="#" class="flex gap-2 items-center transition-all duration-200 text-sm text-gray-900 dark:text-gray-300">Contact support<i class="fas fa-arrow-right"></i></a>
+        <a href="mailto:me@cakadi.my.id" class="flex gap-2 items-center transition-all duration-200 text-sm text-gray-900 dark:text-gray-300">Contact Me<i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
   </main>
