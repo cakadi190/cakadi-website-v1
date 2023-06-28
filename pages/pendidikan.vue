@@ -50,14 +50,14 @@ const dateConverter = (date: string): string => {
                   <img src="/images/education/default.png" class="h-24 w-24" v-if="!school.logo" alt="Kemdikbud Logo" />
 
                   <div>
-                    <h6 class="font-bold text-2xl text-gray-600 dark:text-gray-300">{{ school.name }} <span v-if="school.grade">({{ school.grade }})</span></h6>
+                    <h6 class="font-bold text-2xl mb-2 text-gray-600 dark:text-gray-300">{{ school.name }} <span v-if="school.grade">({{ school.grade }})</span></h6>
 
-                    <div class="flex flex-wrap gap-2 items-center">
+                    <div class="flex mb-2 flex-wrap gap-y-1 gap-x-2 items-center">
                       <span v-if="school.departement" class="inline-block">{{ school.departement }} <span v-if="school.study_program">/ {{ school.study_program }}</span></span>
                       <i v-if="school.departement" class="fas fa-circle text-[.5rem]"></i>
                       <a v-if="school.web" class="hover:text-green-700 hover:underline transition-all duration-200 dark:hover:text-green-500" :href="school.web">{{ school.web?.match(/^(?:.*?\.)?([a-zA-Z0-9\-_]{3,}\.(?:\w{2,8}|\w{2,4}\.\w{2,4}))$/)?.[1] }}</a>
                       <i v-if="school.web" class="fas fa-circle text-[.5rem]"></i>
-                      <span class="inline-flex gap-2 items-center">
+                      <span class="inline-flex gap-y-1 gap-x-2 flex-wrap items-center">
                         {{ dateConverter(school.start) }} s/d {{ school.end ? dateConverter(school.end) : '-' }}
                         <span class="p-2 rounded-md text-xs leading-none flex bg-green-500/[.25] text-green-500" v-if="school.end">Graduated</span>
                         <span class="p-2 rounded-md text-xs leading-none flex bg-indigo-500/[.25] text-indigo-500" v-else>On Progress</span>
