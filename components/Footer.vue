@@ -54,7 +54,7 @@ footer.footer-main.text-gray-300.bg-gray-900.border-t.border-transparent(class="
           li
             a.text-white.transition-all.duration-200(class="hover:text-gray-300", href="https://www.cakadi.my.id") Blog Pribadi
           li
-            a.text-white.transition-all.duration-200(class="hover:text-gray-300", href="#") Referensi Ngoding
+            router-link.text-white.transition-all.duration-200(class="hover:text-gray-300", to="/sumber-daya/tempat-belajar-ngoding") Referensi Ngoding
           li
             router-link.text-white.transition-all.duration-200(class="hover:text-gray-300", to="/sumber-daya/tempat-ngopi") Tempat Ngopi
 
