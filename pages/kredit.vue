@@ -80,10 +80,19 @@ layout#career
             li.flex.gap-4(class="md:gap-6")
               i.fas.fa-square.text-base
               div
+                | Dummy Photo by 
+                a.text-green-600(class="dark:text-green-500", href='https://unsplash.com/@reneporter?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText') Ren&eacute; Porter
+                |  on 
+                a.text-green-600(class="dark:text-green-500", href='https://unsplash.com/s/photos/sample?license=free&utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText') Unsplash
+                | .
+
+            li.flex.gap-4(class="md:gap-6")
+              i.fas.fa-square.text-base
+              div
                 h6.font-bold.text-gray-600.mb-3(class="dark:text-gray-200") 
-                  a.underlined(href="https://enji.dev") Web Mas Enji
+                  a(href="https://enji.dev") Web Mas Enji
                   span.text-gray-400 &nbsp;dan 
-                  a.underlined(href="https://theodorusclarence.com/") Web Mas Theo
+                  a(href="https://theodorusclarence.com/") Web Mas Theo
                 p Terimakasih kepada Mas Enji dan Mas Theo yang udah bikin web kece badai yang bikin aku terkesima dan terinspirasi dari masnya.
             li.flex.gap-4(class="md:gap-6")
               i.fas.fa-square.text-base

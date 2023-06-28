@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
 
-const menuLinks: MenuLink[] = [
+const menuLinks: Array<MenuLink> = [
   { label: 'Beranda', link: 'index', icon: 'fas fa-home' },
   { label: 'Portofolio', link: 'portofolio', icon: 'fas fa-wrench' },
   { label: 'Pendidikan', link: 'pendidikan', icon: 'fas fa-graduation-cap' },

@@ -22,6 +22,26 @@ nuxtApp.vueApp.use(MotionPlugin)
 html {
   scroll-behavior: smooth;
 }
+
+/* Lebar scrollbar */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+/* Warna latar belakang track scrollbar */
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-900;
+}
+
+/* Warna thumb scrollbar saat tidak dihover */
+::-webkit-scrollbar-thumb {
+  @apply dark:bg-gray-700 bg-gray-200;
+}
+
+/* Warna thumb scrollbar saat dihover */
+::-webkit-scrollbar-thumb:hover {
+  @apply dark:bg-gray-600 bg-gray-300;
+}
 </style>
 
 <template>

@@ -57,10 +57,10 @@ home
             span.font-bold.text-gray-700(class="dark:text-gray-300") teknologi.
         
         .pt-6.flex.gap-2.justify-center(class="md:justify-start", v-motion, :initial="{ opacity: 0, x: -100 }", :enter="{ opacity: 1, x: 0 }", :delay="50")
-          router-link.px-4.text-lg.py-2.outline-0.outline-none.duration-200.transition-all.rounded-md.text-white.bg-green-500.flex.gap-2.items-center(class="hover:bg-green-600 focus:ring-2 focus:ring-green-500/[.75] focus:ring-offset-2 dark:focus:ring-offset-gray-950", :to="{ name: 'kontak-saya' }")
+          router-link.px-4.text-lg.py-2.outline-0.outline-none.duration-200.transition-all.rounded-lg.text-white.bg-green-500.flex.gap-2.items-center(class="hover:bg-green-600 focus:ring-2 focus:ring-green-500/[.75] focus:ring-offset-2 dark:focus:ring-offset-gray-950", :to="{ name: 'kontak-saya' }")
             i.fas.fa-phone.text-sm
             span Hubungi Saya
-          a.px-4.text-lg.py-2.outline-0.outline-none.duration-200.transition-all.rounded-md.text-gray-500.items-center.flex.gap-2(class="hover:bg-green-600 focus:ring-2 dark:text-white hover:text-white focus:ring-green-500/[.75] focus:ring-offset-2 dark:focus:ring-offset-gray-950", href="https://s.id/cvnyaCakAdi") 
+          a.px-4.text-lg.py-2.outline-0.outline-none.duration-200.transition-all.rounded-lg.text-gray-500.items-center.flex.gap-2(class="hover:bg-green-600 focus:ring-2 dark:text-white hover:text-white focus:ring-green-500/[.75] focus:ring-offset-2 dark:focus:ring-offset-gray-950", href="https://s.id/cvnyaCakAdi") 
             i.fas.fa-file-pdf.text-sm
             span Resume
 
