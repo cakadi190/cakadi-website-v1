@@ -28,6 +28,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@vueuse/motion": "^2.0.0",
     "boxicons": "^2.1.4",
+    "nuxt-icon": "^0.4.2",
     "remixicon": "^3.4.0",
     "rippleui": "^1.12.1",
     "vue": "^3.3.0",

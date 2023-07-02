@@ -2,12 +2,12 @@
 import { onMounted, ref } from 'vue';
 
 const menuLinks: Array<MenuLink> = [
-  { label: 'Beranda', link: 'index', icon: 'fas fa-home' },
-  { label: 'Portofolio', link: 'portofolio', icon: 'fas fa-wrench' },
-  { label: 'Pendidikan', link: 'pendidikan', icon: 'fas fa-graduation-cap' },
-  { label: 'Penghargaan', link: 'penghargaan', icon: 'fas fa-trophy' },
-  { label: 'Karir', link: 'karir', icon: 'fas fa-briefcase' },
-  { label: 'Kontak Saya', link: 'kontak-saya', icon: 'fas fa-envelope' },
+  { label: 'Beranda', link: 'index', icon: 'house' },
+  { label: 'Portofolio', link: 'portofolio', icon: 'wrench' },
+  { label: 'Pendidikan', link: 'pendidikan', icon: 'graduation-cap' },
+  { label: 'Penghargaan', link: 'penghargaan', icon: 'trophy' },
+  { label: 'Karir', link: 'karir', icon: 'briefcase' },
+  { label: 'Kontak Saya', link: 'kontak-saya', icon: 'envelope' },
 ];
 
 const refNavbar = ref<HTMLElement | null>(null);
@@ -72,7 +72,7 @@ div
   nav(id="navbar", ref="refNavbar", class="fixed w-full duration-200 border-transparent top-0 z-40 border-b dark:border-gray-900 py-2")
     div(class="container mx-auto px-4 md:max-w-7xl flex items-center justify-between")
       button(aria-label="Toggle Sidebar", rel="nofollow", class="outline-0 outline-none transition-all duration-200 lg:hidden items-center flex", type="button", @click="sidebarToggler")
-        i.fas.fa-bars.text-xl
+        Icon.text-xl(name="fa6-solid:bars")
       router-link.ml-6.mr-auto.text-xl.flex.justify-center.items-center.outline-none.outline-0(:to="{ name: 'index' }", class="lg:ml-0 outline-0 outline-none transition-all duration-200 min-hover:text-green-500")
         img(alt="Logo Cak Adi Colored", class="dark:hidden", src="/images/brands/logo-color-long.svg", style="height: 24px")
         img(alt="Logo Cak Adi White", class="hidden dark:block", src="/images/brands/logo-white-long.svg", style="height: 24px")
@@ -99,7 +99,7 @@ div
 
       .group.relative.ml-2
         button(aria-label="Social Media Menu", rel="nofollow", type="button", class="z-20 h-10 w-10 flex items-center px-3 py-1")
-          i.fas.fa-ellipsis-v.fa-fw
+          Icon(name="fa6-solid:ellipsis-vertical")
       
         ul.absolute.z-10.hidden.h-0.rounded-md.border.border-gray-200.bg-white.p-2.text-gray-700.transition-all.duration-200.right-0(class='min-w-[220px] group-hover:block group-hover:h-max dark:border-gray-800 dark:bg-gray-900')
           li
@@ -133,10 +133,10 @@ div
         img(alt="Logo Cak Adi White", class="hidden dark:block", src="/images/brands/logo-white-long.svg", style="height: 24px")
 
       button.h-8.w-8.flex.items-center.justify-center(aria-label="Close Sidebar", @click="sidebarToggler")
-        i.fas.fa-close.text-2xl
+        Icon(name="fa-regular:times-circle").text-2xl
 
     div.px-4.mr-2.flex.flex-col.gap-1.grow.transition-all.duration-200
       router-link.flex.gap-3.items-center.px-4.rounded-lg.border-b-2.border-transparent.py-2.duration-200.transition-all(v-for="(menu, index) in menuLinks", :key="index", :to="{ name: menu.link }", class="text-gray-500 dark:text-gray-400", :class="{ 'dark:text-green-500 bg-green-500/[.25] text-green-800': $route.name === menu.link }")
-        i(:class="menu.icon")
+        Icon(:name="`fa6-solid:${menu.icon}`")
         span {{ menu.label }}
 </template>

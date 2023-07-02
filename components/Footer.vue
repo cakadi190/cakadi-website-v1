@@ -14,15 +14,15 @@ footer.footer-main.text-gray-300.bg-gray-900.border-t.border-transparent(class="
 
       .flex.gap-3.mt-4
         a(aria-label="Cak Adi's Facebook", class="hover:text-white duration-200 transition-all", href="https://www.facebook.com/cakadi190")
-          i.fab.fa-facebook.fa-fw.text-xl
+          Icon(name="fa6-brands:facebook").text-xl
         a(aria-label="Cak Adi's Twitter", class="hover:text-white duration-200 transition-all", href="https://www.twitter.com/cakadi190")
-          i.fab.fa-twitter.fa-fw.text-xl
+          Icon(name="fa6-brands:twitter").text-xl
         a(aria-label="Cak Adi's Figma", class="hover:text-white duration-200 transition-all", href="https://www.figma.com/@cakadi190")
-          i.fab.fa-figma.fa-fw.text-xl
+          Icon(name="fa6-brands:figma").text-xl
         a(aria-label="Cak Adi's Instagram", class="hover:text-white duration-200 transition-all", href="https://www.instagram.com/cakadi190")
-          i.fab.fa-instagram.fa-fw.text-xl
+          Icon(name="fa6-brands:instagram").text-xl
         a(aria-label="Cak Adi's Linkedin", class="hover:text-white duration-200 transition-all", href="https://www.linkedin.com/in/cakadi190")
-          i.fab.fa-linkedin.fa-fw.text-xl
+          Icon(name="fa6-brands:linkedin").text-xl
 
     //- .col-md-6.row
     .w-full.grid.justify-between.gap-6.grid-flow-cols-dense(class="lg:w-1/2 lg:gap-0 grid-cols-2 sm:grid-cols-3")
@@ -73,12 +73,12 @@ footer.footer-main.text-gray-300.bg-gray-900.border-t.border-transparent(class="
             a.text-white.transition-all.duration-200(class="hover:text-gray-300", href="https://ko-fi.com/cakadi190") Donasi Di ko-fi.com
 
   //- Footer Bottom
-  .container.mx-auto.px-4.text-center.pt-8.border-t.border-gray-800.flex-col(class="lg:text-left lg:flex-row dark:text-gray-400 lg:max-w-7xl flex justify-between py-6")
+  .container.mx-auto.px-4.text-center.pt-8.border-t.border-gray-800.flex-col(class="lg:text-left lg:flex-row dark:text-gray-400 lg:max-w-7xl flex justify-between pt-6")
     p Hak cipta &copy; {{ year ?? 2023 }} 
       a.text-white.duration-200.transition-all(class="hover:text-green-400", href="https://www.cakadi.my.id") Cak Adi
       | . Hak cipta dilindungi perundang-undangan.
     p Made with 
-      i.fas.fa-heart.text-pink-500
+      Icon(name="fa6-solid:heart").text-pink-500
       |  by 
       a.text-white.duration-200.transition-all(class="hover:text-green-400", href="https://www.dasakreativa.web.id") Dasa Kreativa Studio
       | .

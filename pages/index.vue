@@ -34,7 +34,7 @@ const role: TypedOptions = {
 <template lang="pug">
 home
   header.pt-20.flex.flex-col.justify-center.min-h-screen#header-banner(class="md:py-6")
-    div.text-center(class="container md:text-left mx-auto px-4 md:max-w-7xl items-center flex flex-col md:flex-row gap-2")
+    div.text-center(class="container z-20 md:text-left mx-auto px-4 md:max-w-7xl items-center flex flex-col md:flex-row gap-2")
       div.w-full.mb-4(class="lg:w-3/5 md:w-1/2 lg:mb-0")
         p.text-xl.mb-2.text-green-700.font-light(v-motion, :initial="{ opacity: 0, x: -100 }", :enter="{ opacity: 1, x: 0 }", :delay="50", class="dark:text-green-500") Halo rek! 👋 Perkenalkan, Aku...
         h1.text-4xl.font-bold.pb-3.text-gray-700(v-motion, :initial="{ opacity: 0, x: -100 }", :enter="{ opacity: 1, x: 0 }", class="lg:pb-1 lg:text-6xl dark:text-gray-300", title="Cak Adi")
@@ -58,27 +58,33 @@ home
         
         .pt-6.flex.gap-2.justify-center(class="md:justify-start", v-motion, :initial="{ opacity: 0, x: -100 }", :enter="{ opacity: 1, x: 0 }", :delay="50")
           router-link.px-4.text-lg.py-2.outline-0.outline-none.duration-200.transition-all.rounded-lg.text-white.bg-green-500.flex.gap-2.items-center(class="hover:bg-green-600 focus:ring-2 focus:ring-green-500/[.75] focus:ring-offset-2 dark:focus:ring-offset-gray-950", :to="{ name: 'kontak-saya' }")
-            i.fas.fa-phone.text-sm
+            Icon(name="fa6-solid:phone", size=".875rem")
             span Hubungi Saya
           a.px-4.text-lg.py-2.outline-0.outline-none.duration-200.transition-all.rounded-lg.text-gray-500.items-center.flex.gap-2(class="hover:bg-green-600 focus:ring-2 dark:text-white hover:text-white focus:ring-green-500/[.75] focus:ring-offset-2 dark:focus:ring-offset-gray-950", href="https://s.id/cvnyaCakAdi") 
-            i.fas.fa-file-pdf.text-sm
+            Icon(name="fa6-solid:file-pdf", size=".875rem")
             span Resume
 
         .mt-4(v-motion, :initial="{ opacity: 0, x: -100 }", :enter="{ opacity: 1, x: 0 }", :delay="50", class="lg:mt-8")
           p.text-lg.mb-2.text-gray-500(class="lg:text-xl dark:text-gray-400")
             em Tech Stack 
             | Andalan
+
+          //- Tech Stack
           .flex.gap-3.justify-center.items-center(class="md:justify-start lg:gap-4")
-            img.grayscale(class="hover:grayscale-0 transition-all duration-200", src="/images/favourite-stack/laravel.svg", :style="{ height: '32px' }")
-            img.grayscale(class="hover:grayscale-0 transition-all duration-200", src="/images/favourite-stack/bootstrap.svg", :style="{ height: '32px' }")
-            img.grayscale(class="hover:grayscale-0 transition-all duration-200", src="/images/favourite-stack/vuejs.svg", :style="{ height: '32px' }")
-            img.grayscale(class="hover:grayscale-0 transition-all duration-200", src="/images/favourite-stack/nuxtjs.svg", :style="{ height: '32px' }")
-            img.grayscale(class="hover:grayscale-0 transition-all duration-200", src="/images/favourite-stack/wordpress.svg", :style="{ height: '32px' }")
+            Icon.grayscale(class="hover:grayscale-0 transition-all duration-200", name="devicon:laravel", size="32")
+            Icon.grayscale(class="hover:grayscale-0 transition-all duration-200", name="devicon:bootstrap", size="32")
+            Icon.grayscale(class="hover:grayscale-0 transition-all duration-200", name="devicon:vuejs", size="32")
+            Icon.grayscale(class="hover:grayscale-0 transition-all duration-200", name="devicon:nuxtjs", size="32")
+            Icon.grayscale(class="hover:grayscale-0 transition-all duration-200", name="devicon:wordpress", size="32")
             .border-l.h-6.border-gray-300(class="dark:border-gray-600")
-            img.grayscale(class="hover:grayscale-0 transition-all duration-200", src="/images/favourite-stack/vscode.svg", :style="{ height: '32px' }")
-            img.grayscale(class="hover:grayscale-0 transition-all duration-200", src="/images/favourite-stack/figma.svg", :style="{ height: '32px' }")
+            Icon.grayscale(class="hover:grayscale-0 transition-all duration-200", name="devicon:figma", size="32")
+            Icon.grayscale(class="hover:grayscale-0 transition-all duration-200", name="devicon:vscode", size="32")
+
       div.w-full(class="lg:w-2/5 md:w-1/2") 
         img.w-full(src="/images/fotoku.min.png")
+
+    .w-72.h-72.p-8.rounded-full(class="bg-green-500 opacity-30 top-0 left-0 absolute filter blur-3xl mix-blend-multiply")
+    .w-56.h-56.p-8.rounded-full(class="bg-green-500 opacity-50 bottom-0 right-0 absolute filter blur-3xl mix-blend-multiply")
 
   section.py-20#about-me
     div(class="container lg:text-left mx-auto px-4 lg:max-w-7xl items-center justify-center flex flex-col lg:flex-row gap-2")

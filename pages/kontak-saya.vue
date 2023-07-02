@@ -43,16 +43,16 @@ layout#contact-me
                   th.px-4.py-4.font-medium.text-gray-900.whitespace-nowrap(scope='row', class='dark:text-white')
                     | Surat Elektronik
                   td.px-4.py-4
-                    a.underline.flex.gap-2.max-w-max(href="mailto:me@cakadi.my.id")
+                    a.items-center.underline.flex.gap-2.max-w-max(href="mailto:me@cakadi.my.id")
                       span me@cakadi.my.id
-                      i.fas.fa-external-link.text-sm
+                      Icon(name="fa6-solid:up-right-from-square").text-sm
                 tr.bg-white.border-b(class='dark:bg-transparent dark:border-gray-800')
                   th.px-4.py-4.font-medium.text-gray-900.whitespace-nowrap(scope='row', class='dark:text-white')
                     | Whatsapp
                   td.px-4.py-4.flex.gap-2.flex-col(class="md:flex-row md:gap-4")
                     | 08133355**** 
-                    span.text-sky-700.flex.gap-1(class="dark:text-sky-500")
-                      i.fas.fa-info-circle.text-sm
+                    span.text-sky-700.flex.items-center.gap-1(class="dark:text-sky-500")
+                      Icon(name="fa6-solid:circle-info").text-sm
                       | Mohon surati saya dulu
                 tr.bg-white(class='dark:bg-transparent dark:border-gray-800')
                   th.px-4.py-4.font-medium.text-gray-900.whitespace-nowrap(scope='row', class='dark:text-white')
@@ -90,51 +90,51 @@ layout#contact-me
                   th.px-4.py-4.font-medium.text-gray-900.whitespace-nowrap(scope='row', class='dark:text-white')
                     | Instagram
                   td.px-4.py-4
-                    a.underline.flex.gap-2.max-w-max(href="https://www.instagram.com/cakadi190")
+                    a.items-center.underline.flex.gap-2.max-w-max(href="https://www.instagram.com/cakadi190")
                       span @cakadi190
-                      i.fas.fa-external-link.text-sm
+                      Icon(name="fa6-solid:up-right-from-square").text-sm
                 tr.bg-white.border-b(class='dark:bg-transparent dark:border-gray-800')
                   th.px-4.py-4.font-medium.text-gray-900.whitespace-nowrap(scope='row', class='dark:text-white')
                     | Twitter
                   td.px-4.py-4
-                    a.underline.flex.gap-2.max-w-max(href="https://www.twitter.com/cakadi190")
+                    a.items-center.underline.flex.gap-2.max-w-max(href="https://www.twitter.com/cakadi190")
                       span @cakadi190
-                      i.fas.fa-external-link.text-sm
+                      Icon(name="fa6-solid:up-right-from-square").text-sm
                 tr.bg-white.border-b(class='dark:bg-transparent dark:border-gray-800')
                   th.px-4.py-4.font-medium.text-gray-900.whitespace-nowrap(scope='row', class='dark:text-white')
                     | Facebook
                   td.px-4.py-4
-                    a.underline.flex.gap-2.max-w-max(href="https://www.facebook.com/cakadi190")
+                    a.items-center.underline.flex.gap-2.max-w-max(href="https://www.facebook.com/cakadi190")
                       span @cakadi190
-                      i.fas.fa-external-link.text-sm
+                      Icon(name="fa6-solid:up-right-from-square").text-sm
                 tr.bg-white.border-b(class='dark:bg-transparent dark:border-gray-800')
                   th.px-4.py-4.font-medium.text-gray-900.whitespace-nowrap(scope='row', class='dark:text-white')
                     | TikTok
                   td.px-4.py-4
-                    a.underline.flex.gap-2.max-w-max(href="https://www.tiktok.com/@catatancakadi")
+                    a.items-center.underline.flex.gap-2.max-w-max(href="https://www.tiktok.com/@catatancakadi")
                       span @catatancakadi
-                      i.fas.fa-external-link.text-sm
+                      Icon(name="fa6-solid:up-right-from-square").text-sm
                 tr.bg-white.border-b(class='dark:bg-transparent dark:border-gray-800')
                   th.px-4.py-4.font-medium.text-gray-900.whitespace-nowrap(scope='row', class='dark:text-white')
                     | Github
                   td.px-4.py-4
-                    a.underline.flex.gap-2.max-w-max(href="https://www.github.com/cakadi190")
+                    a.items-center.underline.flex.gap-2.max-w-max(href="https://www.github.com/cakadi190")
                       span @cakadi190
-                      i.fas.fa-external-link.text-sm
+                      Icon(name="fa6-solid:up-right-from-square").text-sm
                 tr.bg-white.border-b(class='dark:bg-transparent dark:border-gray-800')
                   th.px-4.py-4.font-medium.text-gray-900.whitespace-nowrap(scope='row', class='dark:text-white')
                     | StackOverflow
                   td.px-4.py-4
-                    a.underline.flex.gap-2.max-w-max(href="https://stackoverflow.com/users/17911271/amir-zuhdi-wibowo")
+                    a.items-center.underline.flex.gap-2.max-w-max(href="https://stackoverflow.com/users/17911271/amir-zuhdi-wibowo")
                       span Amir Zuhdi Wibowo
-                      i.fas.fa-external-link.text-sm
+                      Icon(name="fa6-solid:up-right-from-square").text-sm
                 tr.bg-white(class='dark:bg-transparent dark:border-gray-800')
                   th.px-4.py-4.font-medium.text-gray-900.whitespace-nowrap(scope='row', class='dark:text-white')
                     | LinkedIn
                   td.px-4.py-4
-                    a.underline.flex.gap-2.max-w-max(href="https://www.linkedin.com/in/cakadi190")
+                    a.items-center.underline.flex.gap-2.max-w-max(href="https://www.linkedin.com/in/cakadi190")
                       span https://www.linkedin.com/in/cakadi190
-                      i.fas.fa-external-link.text-sm
+                      Icon(name="fa6-solid:up-right-from-square").text-sm
 
       div.w-full.z-30(class="md:w-1/4 lg:-mt-16") 
         .bg-white.top-0.border.border-gray-200(class="sticky md:top-20 lg:top-16 dark:border-gray-800 dark:bg-gray-900 rounded-lg")
