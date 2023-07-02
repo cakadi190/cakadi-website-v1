@@ -5,20 +5,7 @@ useHead({
   title: 'Riwayat Pendidikan'
 });
 
-type Education = {
-  name: string;
-  grade: string;
-  logo: string;
-  departement?: string|null;
-  study_program?: string|null;
-  web?: string|null;
-  start: string;
-  place?: string;
-  end?: string|null;
-}
-
 const { data, pending, error } = await useLazyFetch<Education[]>('/api/education')
-watch(data, () => {})
 
 const dateConverter = (date: string): string => {
   const $dateInstance = new Date(date);
@@ -49,13 +36,13 @@ const dateConverter = (date: string): string => {
                   <img src="/images/education/default.png" class="h-24 w-24" v-if="!school.logo" alt="Kemdikbud Logo" />
 
                   <div>
-                    <h6 class="font-bold text-2xl md:text-xl lg:text-3xl mb-2 text-gray-600 dark:text-gray-300">{{ school.name }} <span v-if="school.grade">({{ school.grade }})</span></h6>
+                    <h6 class="font-bold text-xl md:text-xl lg:text-3xl mb-2 text-gray-600 dark:text-gray-300">{{ school.name }} <span v-if="school.grade">({{ school.grade }})</span></h6>
 
                     <div class="flex mb-2 flex-wrap gap-y-1 gap-x-2 items-center">
                       <span v-if="school.departement" class="inline-block">{{ school.departement }} <span v-if="school.study_program">/ {{ school.study_program }}</span></span>
-                      <i v-if="school.departement" class="fas fa-circle text-[.5rem]"></i>
+                      <Icon v-if="school.departement" name="fa6-solid:circle" class="text-[.5rem]" />
                       <a v-if="school.web" class="hover:text-green-700 hover:underline transition-all duration-200 dark:hover:text-green-500" :href="school.web">{{ school.web?.match(/^(?:.*?\.)?([a-zA-Z0-9\-_]{3,}\.(?:\w{2,8}|\w{2,4}\.\w{2,4}))$/)?.[1] }}</a>
-                      <i v-if="school.web" class="fas fa-circle text-[.5rem]"></i>
+                      <Icon v-if="school.web" name="fa6-solid:circle" class="text-[.5rem]" />
                       <span class="inline-flex gap-y-1 gap-x-2 flex-wrap items-center">
                         {{ dateConverter(school.start) }} s/d {{ school.end ? dateConverter(school.end) : '-' }}
                         <span class="p-2 rounded-md text-xs leading-none flex bg-green-500/[.25] text-green-500" v-if="school.end">Lulus</span>
@@ -63,7 +50,7 @@ const dateConverter = (date: string): string => {
                       </span>
                     </div>
 
-                    <div class="text-xl mt-2">{{ school.place }}</div>
+                    <div class="text-lg md:text-xl mt-2">{{ school.place }}</div>
                   </div>
                 </div>
 

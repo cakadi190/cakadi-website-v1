@@ -105,24 +105,24 @@ div
           li
             h6.px-4.mb-2.text-gray-400.pt-2(class="dark:text-gray-500") Ikuti Media Sosial Saya
           li
-            a.flex.w-full.items-center.rounded-md.p-2.px-4.outline-none.outline-0.transition-all.duration-200(aria-label="Cak Adi's Facebook", class='hover:bg-gray-900/[.075] focus:bg-green-500 focus:text-white active:bg-green-500 active:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:bg-green-500 dark:focus:text-white dark:active:bg-green-500 gap-2 flex dark:active:text-white', href='https://www.facebook.com/cakadi190')
-              i.fab.fa-facebook
+            a.flex.w-full.items-center.rounded-md.p-2.px-4.outline-none.outline-0.transition-all.duration-200(aria-label="Cak Adi's Facebook", class='hover:bg-gray-900/[.075] focus:bg-green-500 focus:text-white active:bg-green-500 active:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:bg-green-500 dark:focus:text-white dark:active:bg-green-500 gap-3 flex dark:active:text-white', href='https://www.facebook.com/cakadi190')
+              Icon(name="fa6-brands:facebook", size="18")
               span Facebook
           li
-            a.flex.w-full.items-center.rounded-md.p-2.px-4.outline-none.outline-0.transition-all.duration-200(aria-label="Cak Adi's Twitter", class='hover:bg-gray-900/[.075] focus:bg-green-500 focus:text-white active:bg-green-500 active:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:bg-green-500 dark:focus:text-white dark:active:bg-green-500 gap-2 flex dark:active:text-white', href='https://www.twitter.com/cakadi190')
-              i.fab.fa-twitter
+            a.flex.w-full.items-center.rounded-md.p-2.px-4.outline-none.outline-0.transition-all.duration-200(aria-label="Cak Adi's Twitter", class='hover:bg-gray-900/[.075] focus:bg-green-500 focus:text-white active:bg-green-500 active:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:bg-green-500 dark:focus:text-white dark:active:bg-green-500 gap-3 flex dark:active:text-white', href='https://www.twitter.com/cakadi190')
+              Icon(name="fa6-brands:twitter", size="18")
               span Twitter
           li
-            a.flex.w-full.items-center.rounded-md.p-2.px-4.outline-none.outline-0.transition-all.duration-200(aria-label="Cak Adi's Instagram", class='hover:bg-gray-900/[.075] focus:bg-green-500 focus:text-white active:bg-green-500 active:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:bg-green-500 dark:focus:text-white dark:active:bg-green-500 gap-2 flex dark:active:text-white', href='https://www.instagram.com/cakadi190')
-              i.fab.fa-instagram
+            a.flex.w-full.items-center.rounded-md.p-2.px-4.outline-none.outline-0.transition-all.duration-200(aria-label="Cak Adi's Instagram", class='hover:bg-gray-900/[.075] focus:bg-green-500 focus:text-white active:bg-green-500 active:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:bg-green-500 dark:focus:text-white dark:active:bg-green-500 gap-3 flex dark:active:text-white', href='https://www.instagram.com/cakadi190')
+              Icon(name="fa6-brands:instagram", size="18")
               span Instagram
           li
-            a.flex.w-full.items-center.rounded-md.p-2.px-4.outline-none.outline-0.transition-all.duration-200(aria-label="Cak Adi's Linkedin", class='hover:bg-gray-900/[.075] focus:bg-green-500 focus:text-white active:bg-green-500 active:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:bg-green-500 dark:focus:text-white dark:active:bg-green-500 gap-2 flex dark:active:text-white', href='https://www.linkedin.com/in/cakadi190')
-              i.fab.fa-linkedin
+            a.flex.w-full.items-center.rounded-md.p-2.px-4.outline-none.outline-0.transition-all.duration-200(aria-label="Cak Adi's Linkedin", class='hover:bg-gray-900/[.075] focus:bg-green-500 focus:text-white active:bg-green-500 active:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:bg-green-500 dark:focus:text-white dark:active:bg-green-500 gap-3 flex dark:active:text-white', href='https://www.linkedin.com/in/cakadi190')
+              Icon(name="fa6-brands:linkedin", size="18")
               span LinkedIn
           li
-            a.flex.w-full.items-center.rounded-md.p-2.px-4.outline-none.outline-0.transition-all.duration-200(aria-label="Cak Adi's Youtube", class='hover:bg-gray-900/[.075] focus:bg-green-500 focus:text-white active:bg-green-500 active:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:bg-green-500 dark:focus:text-white dark:active:bg-green-500 gap-2 flex dark:active:text-white', href='https://www.youtube.com/@cakadi190')
-              i.fab.fa-youtube
+            a.flex.w-full.items-center.rounded-md.p-2.px-4.outline-none.outline-0.transition-all.duration-200(aria-label="Cak Adi's Youtube", class='hover:bg-gray-900/[.075] focus:bg-green-500 focus:text-white active:bg-green-500 active:text-white dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:bg-green-500 dark:focus:text-white dark:active:bg-green-500 gap-3 flex dark:active:text-white', href='https://www.youtube.com/@cakadi190')
+              Icon(name="fa6-brands:youtube", size="18")
               span Youtube
 
   div.w-full.h-full.fixed.z-40.duration-200.transition-all(ref="refShadow", class="bg-slate-950/[.75] ml-[-100%]", @click="sidebarToggler")

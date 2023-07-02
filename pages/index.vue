@@ -34,7 +34,7 @@ const role: TypedOptions = {
 <template lang="pug">
 home
   header.pt-20.flex.flex-col.justify-center.min-h-screen#header-banner(class="md:py-6")
-    div.text-center(class="container z-20 md:text-left mx-auto px-4 md:max-w-7xl items-center flex flex-col md:flex-row gap-2")
+    div.text-center(class="container z-20 md:text-left mx-auto px-4 md:max-w-7xl items-center flex flex-col md:flex-row gap-2 md:gap-6")
       div.w-full.mb-4(class="lg:w-3/5 md:w-1/2 lg:mb-0")
         p.text-xl.mb-2.text-green-700.font-light(v-motion, :initial="{ opacity: 0, x: -100 }", :enter="{ opacity: 1, x: 0 }", :delay="50", class="dark:text-green-500") Halo rek! 👋 Perkenalkan, Aku...
         h1.text-4xl.font-bold.pb-3.text-gray-700(v-motion, :initial="{ opacity: 0, x: -100 }", :enter="{ opacity: 1, x: 0 }", class="lg:pb-1 lg:text-6xl dark:text-gray-300", title="Cak Adi")

@@ -54,7 +54,7 @@ layout#career
 
           ul.flex.flex-col.gap-4
             li.flex.gap-4(class="md:gap-6")
-              i.fas.fa-square.text-base
+              Icon(name="fa6-solid:square").text-base
               div
                 | Semua&nbsp;
                 a.text-green-600(class="dark:text-green-500", href="#sponsor") Sponsor
@@ -64,7 +64,7 @@ layout#career
                 a.text-green-600(class="dark:text-green-500", href="https://instagram.com/uniicode.id?igshid=MzRlODBiNWFlZA==") Uniicode
                 | , Forum Linux Indonesia, GNU/Weeb dan grup programmer lainnya.
             li.flex.gap-4(class="md:gap-6")
-              i.fas.fa-square.text-base
+              Icon(name="fa6-solid:square").text-base
               div
                 | CSS Library dari&nbsp;
                 a.text-green-600(class="dark:text-green-500", href="https://tailwindcss.com") TailwindCSS
@@ -72,13 +72,13 @@ layout#career
                 a.text-green-600(class="dark:text-green-500", href="https://nuxt.com") NuxtJS
                 | .
             li.flex.gap-4(class="md:gap-6")
-              i.fas.fa-square.text-base
+              Icon(name="fa6-solid:square").text-base
               div
                 | Emoji dari&nbsp;
                 a.text-green-600(class="dark:text-green-500", href="https://github.com/microsoft/fluentui-emoji") Microsoft Fluent Emoji
                 | .
             li.flex.gap-4(class="md:gap-6")
-              i.fas.fa-square.text-base
+              Icon(name="fa6-solid:square").text-base
               div
                 | Dummy Photo by 
                 a.text-green-600(class="dark:text-green-500", href='https://unsplash.com/@reneporter?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText') Ren&eacute; Porter
@@ -87,7 +87,7 @@ layout#career
                 | .
 
             li.flex.gap-4(class="md:gap-6")
-              i.fas.fa-square.text-base
+              Icon(name="fa6-solid:square").text-base
               div
                 h6.font-bold.text-gray-600.mb-3(class="dark:text-gray-200") 
                   a(href="https://enji.dev") Web Mas Enji
@@ -95,7 +95,7 @@ layout#career
                   a(href="https://theodorusclarence.com/") Web Mas Theo
                 p Terimakasih kepada Mas Enji dan Mas Theo yang udah bikin web kece badai yang bikin aku terkesima dan terinspirasi dari masnya.
             li.flex.gap-4(class="md:gap-6")
-              i.fas.fa-square.text-base
+              Icon(name="fa6-solid:square").text-base
               div
                 | Dan semua komunitas sumber terbuka&nbsp;
                 a.text-green-600(class="dark:text-green-500", target="_blank", href="https://github.com/cakadi190/cakadi-website/blob/main/package.json") pada perkakas ini
