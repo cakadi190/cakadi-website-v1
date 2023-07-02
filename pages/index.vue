@@ -15,7 +15,7 @@ useHead({
     
     { key: 'og:url', name: 'og:url', content: 'https://www.cakadi.eu.org' },
     { key: 'og:description', name: 'og:description', content: 'Web Resmi Amir Zuhdi Wibowo yang mana adalah seorang Fullstack Web Developer yang suka desain dan atau semua hal yang berbau teknologi.' },
-  ]
+  ],
 })
 
 const callsign: TypedOptions = {
@@ -74,7 +74,7 @@ home
             Icon.grayscale(class="hover:grayscale-0 transition-all duration-200", name="devicon:laravel", size="32")
             Icon.grayscale(class="hover:grayscale-0 transition-all duration-200", name="devicon:bootstrap", size="32")
             Icon.grayscale(class="hover:grayscale-0 transition-all duration-200", name="devicon:vuejs", size="32")
-            Icon.grayscale(class="hover:grayscale-0 transition-all duration-200", name="devicon:nuxtjs", size="32")
+            Icon.grayscale(class="hover:grayscale-0 transition-all duration-200", name="logos:nuxt-icon", size="32")
             Icon.grayscale(class="hover:grayscale-0 transition-all duration-200", name="devicon:wordpress", size="32")
             .border-l.h-6.border-gray-300(class="dark:border-gray-600")
             Icon.grayscale(class="hover:grayscale-0 transition-all duration-200", name="devicon:figma", size="32")
