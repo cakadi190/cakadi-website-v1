@@ -1,5 +1,14 @@
 const data = [
     {
+        id: 'sipdata-pemuda-mta-boyolali',
+        status: 'success',
+        category: 'web',
+        name: 'SIPDATA Pemuda MTA Boyolali',
+        techStack: ['laravel', 'bootstrap', 'javascript', 'php'],
+        shortDesc: 'Sistem Informasi database Pemuda MTA Cabang Boyolali untuk memonitor segala aktifitas kajian hingga manajemen dari Perwakilan hingga ke Cabang.',
+        image: '/images/portofolio/cakadi-home.png',
+    },
+    {
         id: 'cakadi-web',
         status: 'success',
         category: 'web',
@@ -14,7 +23,7 @@ const data = [
         category: 'web',
         name: 'Landing Sirus (Sistem Informasi Rumah Sakit)',
         techStack: ['nuxtjs', 'bootstrap', 'javascript', 'nodejs'],
-        shortDesc: 'Ini adalah website personal milik Cak Adi (Saya Sendiri) untuk menampilkan semua informasi tentang diri saya pribadi.',
+        shortDesc: 'Website landing page untuk perlombaan IntechFest 2021 Politeknik Negeri Bali dan mendapatkan peringkat 1 dalam perlombaan tersebut.',
         image: '/images/portofolio/cakadi-home.png',
     },
     {
@@ -22,7 +31,7 @@ const data = [
         status: 'pending',
         category: 'web',
         name: 'Sistem Informasi Dewan Kerja',
-        techStack: ['laravel', 'bootstrap', 'javascript', 'jquery'],
+        techStack: ['laravel', 'bootstrap', 'javascript', 'jquery', 'php'],
         shortDesc: 'Sistem Informasi untuk mengelola dan memonitor seluruh aktifitas kegiatan di Dewan Kerja seluruh Jawa Timur.',
         image: '/images/portofolio/sideka-front.png',
     },
@@ -31,7 +40,7 @@ const data = [
         status: 'success',
         category: 'web',
         name: 'PMB Eltibiz',
-        techStack: ['laravel', 'bootstrap', 'javascript', 'jquery'],
+        techStack: ['laravel', 'bootstrap', 'javascript', 'jquery', 'php'],
         shortDesc: 'Sistem Website untuk mengelola Penerimaan Mahasiswa Baru, dan ini adalah proyek kolaborasi dengan tugas akhir seorang mahasiswa.',
         image: '/images/portofolio/ppdb-login.png',
     },
