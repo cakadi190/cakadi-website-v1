@@ -1,0 +1,12 @@
+.dropdown {
+  &-menu {
+    --bs-dropdown-padding-y: 1rem;
+    --bs-dropdown-padding-x: 1rem;
+  }
+
+  &.caret-off, .no-caret {
+    &::after, > .dropdown-toggle::after {
+      display: none;
+    }
+  }
+}
