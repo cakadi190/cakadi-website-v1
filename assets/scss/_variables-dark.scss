@@ -41,13 +41,13 @@ $dark-border-subtle-dark:           $gray-800 !default;
 // scss-docs-end theme-border-subtle-dark-variables
 
 $body-color-dark:                   $gray-300 !default;
-$body-bg-dark:                      $gray-900 !default;
+$body-bg-dark:                      #010016 !default;
 $body-secondary-color-dark:         rgba($body-color-dark, .75) !default;
 $body-secondary-bg-dark:            $gray-800 !default;
 $body-tertiary-color-dark:          rgba($body-color-dark, .5) !default;
-$body-tertiary-bg-dark:             mix($gray-800, $gray-900, 50%) !default;
+$body-tertiary-bg-dark:             mix($gray-800, #010016, 50%) !default;
 $body-emphasis-color-dark:          $white !default;
-$border-color-dark:                 $gray-700 !default;
+$border-color-dark:                 rgba($white, .1) !default;
 $border-color-translucent-dark:     rgba($white, .15) !default;
 $headings-color-dark:               inherit !default;
 $link-color-dark:                   tint-color($primary, 40%) !default;

@@ -12,6 +12,7 @@
   "dependencies": {
     "@duskmoon/vue3-typed-js": "^0.0.4",
     "@nuxt/image": "^1.7.0",
+    "@nuxtjs/color-mode": "^3.4.1",
     "@nuxtjs/google-fonts": "^3.2.0",
     "@types/bootstrap": "^5.2.10",
     "@types/jquery": "^3.5.30",

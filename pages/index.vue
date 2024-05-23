@@ -1,10 +1,12 @@
 <script setup lang="ts">
-import HeaderHome from '~/components/partials/header-home.vue';
+import elkuslaSection from '~/components/partials/home/elkusla.vue';
+import HeaderHome from '~/components/partials/home/header-home.vue';
 </script>
 
 <template>
 	<div id="homepage">
     <header-home /> 
+    <elkusla-section />
 	</div>
 </template>
 

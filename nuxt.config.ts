@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     'nuxt-swiper',
     "nuxt-svgo",
     '@vesp/nuxt-fontawesome',
+    '@nuxtjs/color-mode',
     'nuxt-icon',
     ["@nuxtjs/google-fonts", {
       families: {
