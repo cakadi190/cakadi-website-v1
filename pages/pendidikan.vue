@@ -117,7 +117,7 @@
 											<div
 												class="d-flex gap-3 align-items-start align-items-md-center"
 											>
-                        <Icon name="fa6-solid:person-running" size="48" />
+												<Icon name="fa6-solid:person-running" size="48" />
 												<div class="content">
 													<h3>{{ org.orgName }}</h3>
 													<p class="mb-0">{{ org.desc }}</p>
@@ -131,7 +131,12 @@
 						</div>
 					</div>
 					<div class="col-md-4">
-						<div class="card sticky-top rounded-4">
+						<div
+							class="card sticky-top rounded-4"
+							v-motion
+							:enter="enterSlideFromBottomToTop"
+							:initial="initialSlideFromBottomToTop"
+						>
 							<div class="card-header p-4">
 								<h4 class="mb-0">Navigasi</h4>
 							</div>

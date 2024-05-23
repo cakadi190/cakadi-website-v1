@@ -1,5 +1,5 @@
 <template>
-	<footer class="border-top text-white py-4">
+	<footer class="border-top py-4">
 		<div class="container py-4">
 			<div class="row gy-5">
 				<div class="col-md-6">
@@ -12,35 +12,35 @@
 					<div class="d-flex gap-3 mt-4">
 						<a
 							aria-label="Cak Adi's Facebook"
-							class="text-white hover-text-white duration-200 transition-all"
+							class="text-dark duration-200 transition-all"
 							href="https://www.facebook.com/cakadi190"
 						>
 							<Icon size="20" name="fa6-brands:facebook" />
 						</a>
 						<a
 							aria-label="Cak Adi's Twitter"
-							class="text-white hover-text-white duration-200 transition-all"
+							class="text-dark duration-200 transition-all"
 							href="https://www.twitter.com/cakadi190"
 						>
 							<Icon size="20" name="fa6-brands:twitter" />
 						</a>
 						<a
 							aria-label="Cak Adi's Figma"
-							class="text-white hover-text-white duration-200 transition-all"
+							class="text-dark duration-200 transition-all"
 							href="https://www.figma.com/@cakadi190"
 						>
 							<Icon size="20" name="fa6-brands:figma" />
 						</a>
 						<a
 							aria-label="Cak Adi's Instagram"
-							class="text-white hover-text-white duration-200 transition-all"
+							class="text-dark duration-200 transition-all"
 							href="https://www.instagram.com/cakadi190"
 						>
 							<Icon size="20" name="fa6-brands:instagram" />
 						</a>
 						<a
 							aria-label="Cak Adi's Linkedin"
-							class="text-white hover-text-white duration-200 transition-all"
+							class="text-dark duration-200 transition-all"
 							href="https://www.linkedin.com/in/cakadi190"
 						>
 							<Icon size="20" name="fa6-brands:linkedin-in" />
@@ -108,7 +108,6 @@ export default defineComponent({
 <style lang="scss" scoped>
 /* Di dalam <style> */
 .social-icons a {
-	color: white;
 	margin-right: 10px; /* Atur jarak antar ikon */
 }
 

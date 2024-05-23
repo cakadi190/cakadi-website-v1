@@ -14,6 +14,9 @@
 						class="list-group-item py-4"
 						v-for="exp in careerExp"
 						:key="exp.company"
+						v-motion
+						:enter="enterSlideFromBottomToTop"
+						:initial="initialSlideFromBottomToTop"
 					>
 						<div class="d-flex gap-4">
 							<div class="text-center align-items-start align-items-lg-center">
@@ -37,6 +40,11 @@
 </template>
 
 <script lang="ts" setup>
+import {
+	initialSlideFromBottomToTop,
+	enterSlideFromBottomToTop,
+} from "~/components/motion";
+
 const careerExp = ref([
 	{
 		position: "Magang Fullstack Web Developer",

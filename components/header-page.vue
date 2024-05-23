@@ -76,7 +76,8 @@ import {
 	}
 
 	.row {
-		min-height: 50dvh;
+		min-height: 40dvh;
+    padding-top: 5rem;
 		align-items: center;
 	}
 }
